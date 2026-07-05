@@ -1,0 +1,463 @@
+
+/*==================================================
+                SKILLS SECTION
+==================================================*/
+
+.skills{
+
+    background:#08111F;
+
+    position:relative;
+
+}
+
+.skills::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(0,120,212,.08);
+
+    filter:blur(120px);
+
+    top:-200px;
+
+    left:-200px;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.skill-card{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:all .4s ease;
+
+    backdrop-filter:blur(15px);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.skill-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    background:rgba(0,120,212,.12);
+
+    border-radius:50%;
+
+    top:-70px;
+
+    right:-70px;
+
+    transition:.4s;
+
+}
+
+.skill-card:hover::before{
+
+    transform:scale(2);
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(0,120,212,.25);
+
+}
+
+.skill-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+.skill-card:hover i{
+
+    transform:scale(1.15) rotate(6deg);
+
+}
+
+.skill-card h3{
+
+    font-size:1.3rem;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.skill-card p{
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    font-size:.95rem;
+
+}
+
+/*==================================================
+            TECH STACK TAGS
+==================================================*/
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+.tech-stack span{
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:var(--light);
+
+    font-size:.9rem;
+
+    transition:.3s;
+
+}
+
+.tech-stack span:hover{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+    transform:translateY(-3px);
+
+}
+
+/*==================================================
+            ICON COLORS
+==================================================*/
+
+.skill-card .fa-microsoft{
+
+    color:#00A4EF;
+
+}
+
+.skill-card .fa-linux{
+
+    color:#FCC624;
+
+}
+
+.skill-card .fa-github{
+
+    color:#ffffff;
+
+}
+
+.skill-card .fa-git-alt{
+
+    color:#F1502F;
+
+}
+
+.skill-card .fa-code-branch{
+
+    color:#58A6FF;
+
+}
+
+.skill-card .fa-server{
+
+    color:#7C3AED;
+
+}
+
+.skill-card .fa-terminal{
+
+    color:#22C55E;
+
+}
+
+.skill-card .fa-network-wired{
+
+    color:#38BDF8;
+
+}
+
+/*==================================================
+            SKILL PROGRESS SECTION
+==================================================*/
+
+.skill-progress{
+
+    background:#050816;
+
+    position:relative;
+
+}
+
+.progress-wrapper{
+
+    max-width:850px;
+
+    margin:0 auto;
+
+}
+
+.progress-item{
+
+    margin-bottom:35px;
+
+}
+
+.progress-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+.progress-title span:last-child{
+
+    color:var(--primary);
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:14px;
+
+    background:#141d30;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:50px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.progress-fill::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-100%;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    animation:shine 3s infinite;
+
+}
+
+/* Individual Width */
+
+.azure{
+
+    width:85%;
+
+    background:linear-gradient(90deg,#0078D4,#3BA4F6);
+
+}
+
+.terraform{
+
+    width:80%;
+
+    background:linear-gradient(90deg,#7B42F6,#9B6CFF);
+
+}
+
+.linux{
+
+    width:85%;
+
+    background:linear-gradient(90deg,#F4C20D,#FFD95A);
+
+}
+
+.git{
+
+    width:90%;
+
+    background:linear-gradient(90deg,#F1502F,#FF7A59);
+
+}
+
+.actions{
+
+    width:75%;
+
+    background:linear-gradient(90deg,#00C6FB,#005BEA);
+
+}
+
+/*==================================================
+            LEARNING SECTION
+==================================================*/
+
+.learning{
+
+    background:#08111F;
+
+}
+
+.learning-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.learning-card{
+
+    padding:35px 25px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    transition:.35s;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.learning-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(0,120,212,.25);
+
+}
+
+.learning-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.learning-card h3{
+
+    font-size:1.3rem;
+
+    margin-bottom:10px;
+
+}
+
+.learning-card span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    margin-top:15px;
+
+    border-radius:30px;
+
+    background:rgba(0,120,212,.15);
+
+    color:#4FC3F7;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}

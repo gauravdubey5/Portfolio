@@ -2,7 +2,7 @@
             GITHUB CONFIG
 =========================================*/
 
-const GITHUB_USERNAME = "devops-eng-gaurav";
+const GITHUB_USERNAME = "gauravdubey5";
 
 /*=========================================
         FETCH USER PROFILE
