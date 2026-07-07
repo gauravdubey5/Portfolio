@@ -13,14 +13,7 @@ const themes = {
 
     },
 
-    light:{
 
-        primary:"#0078D4",
-        background:"#F8FAFC",
-        card:"#FFFFFF",
-        text:"#334155"
-
-    },
 
     azure:{
 

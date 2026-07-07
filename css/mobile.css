@@ -1056,3 +1056,76 @@ body{
 }
 
 }
+
+@media(max-width:768px){
+
+.stats-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+
+}
+
+.stat-card{
+
+    min-height:130px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.stat-card h2,
+.counter{
+
+    writing-mode:horizontal-tb !important;
+    text-orientation:mixed !important;
+    transform:none !important;
+
+    font-size:2.4rem;
+    line-height:1;
+
+}
+
+.stat-card p{
+
+    margin-top:10px;
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.learning-grid{
+
+    display:grid !important;
+
+    grid-template-columns:1fr !important;
+
+    gap:20px;
+
+}
+
+.learning-card{
+
+    width:100% !important;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.theme-switcher{
+
+    display:none !important;
+
+}
+
+}
+
