@@ -1,0 +1,1058 @@
+/*==================================================
+            MOBILE FIXES
+==================================================*/
+
+@media (max-width:768px){
+
+html,
+body{
+
+    width:100%;
+    overflow-x:hidden;
+
+}
+
+*{
+
+    max-width:100%;
+
+}
+
+.container{
+
+    width:92% !important;
+    max-width:92% !important;
+    margin:0 auto;
+
+}
+
+/*================ HERO =================*/
+
+.hero{
+
+    min-height:auto;
+    padding:120px 0 60px;
+
+}
+
+.hero-container{
+
+    display:flex !important;
+    flex-direction:column;
+    gap:35px;
+    text-align:center;
+
+}
+
+.hero-image{
+
+    order:-1;
+
+}
+
+.image-card{
+
+    width:260px;
+    margin:auto;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+}
+
+.hero h1{
+
+    font-size:2.5rem;
+    line-height:1.2;
+
+}
+
+.hero h2{
+
+    font-size:1.3rem;
+
+}
+
+.hero p{
+
+    max-width:100%;
+    margin:20px auto;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+    width:100%;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+    justify-content:center;
+
+}
+
+.social-links{
+
+    justify-content:center;
+
+}
+
+/*================ ABOUT =================*/
+
+.about-grid{
+
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:35px;
+
+}
+
+.about-image{
+
+    text-align:center;
+
+}
+
+.about-image img{
+
+    width:260px;
+    margin:auto;
+
+}
+
+.about-content{
+
+    text-align:center;
+
+}
+
+/*================ SKILLS =================*/
+
+.skills-grid{
+
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:20px;
+
+}
+
+.skill-card{
+
+    width:100%;
+
+}
+
+/*================ PROJECT =================*/
+
+.project-wrapper{
+
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:30px;
+
+}
+
+.project-image{
+
+    order:-1;
+
+}
+
+.project-features{
+
+    grid-template-columns:1fr !important;
+
+}
+
+.project-buttons{
+
+    flex-direction:column;
+
+}
+
+/*================ GITHUB =================*/
+
+.github-grid{
+
+    grid-template-columns:1fr !important;
+
+}
+
+.repo-grid{
+
+    grid-template-columns:1fr !important;
+
+}
+
+/*================ CONTACT =================*/
+
+.contact-wrapper{
+
+    grid-template-columns:1fr !important;
+
+}
+
+/*================ FOOTER =================*/
+
+.footer-top{
+
+    grid-template-columns:1fr !important;
+
+}
+
+.footer-bottom{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+/*================ FLOATING =================*/
+
+.floating{
+
+    display:none;
+
+}
+
+/*================ THEME =================*/
+
+.theme-switcher{
+
+    display:none;
+
+}
+
+}
+
+/*==================================================
+            MOBILE NAVIGATION
+==================================================*/
+
+@media (max-width:768px){
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    background:rgba(5,8,22,.92);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:72px;
+
+}
+
+/*================ MENU =================*/
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:280px;
+
+    height:100vh;
+
+    background:#08111F;
+
+    padding:100px 30px 30px;
+
+    transition:.35s ease;
+
+    box-shadow:-10px 0 30px rgba(0,0,0,.35);
+
+}
+
+.navbar.active{
+
+    right:0;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.navbar ul li{
+
+    list-style:none;
+
+}
+
+.navbar ul li a{
+
+    color:#fff;
+
+    font-size:1.1rem;
+
+    font-weight:500;
+
+}
+
+.navbar ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+/*================ MENU BUTTON =================*/
+
+.menu-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#111827;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.menu-btn:hover{
+
+    background:var(--primary);
+
+}
+
+/*================ OVERLAY =================*/
+
+.menu-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:998;
+
+}
+
+.menu-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+}
+
+/*==================================================
+            MOBILE HERO IMPROVEMENTS
+==================================================*/
+
+@media (max-width:768px){
+
+/* Hero */
+
+.hero{
+
+    padding-top:110px;
+
+    padding-bottom:60px;
+
+}
+
+.hero-container{
+
+    display:flex !important;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:30px;
+
+}
+
+.hero-image{
+
+    order:-1;
+
+}
+
+.image-card{
+
+    width:240px !important;
+
+    margin:auto;
+
+    border-radius:22px;
+
+}
+
+.image-card img{
+
+    border-radius:18px;
+
+}
+
+.badge{
+
+    font-size:.8rem;
+
+    padding:8px 16px;
+
+}
+
+.hero h1{
+
+    font-size:2.3rem;
+
+    line-height:1.15;
+
+}
+
+.hero h2{
+
+    font-size:1.2rem;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+    margin:15px auto 25px;
+
+}
+
+.typing{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:6px;
+
+    font-size:.95rem;
+
+}
+
+.hero-buttons{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.social-links{
+
+    justify-content:center;
+
+    margin-top:10px;
+
+}
+
+/*================ ABOUT ================*/
+
+.about-grid{
+
+    display:flex !important;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+.about-image{
+
+    order:-1;
+
+    text-align:center;
+
+}
+
+.about-image img{
+
+    width:240px;
+
+    max-width:100%;
+
+}
+
+.about-content{
+
+    text-align:center;
+
+}
+
+.about-content h3{
+
+    font-size:1.8rem;
+
+}
+
+.about-content p{
+
+    font-size:.95rem;
+
+}
+
+/*================ ABOUT INFO ================*/
+
+.about-info{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.info-card{
+
+    width:100%;
+
+}
+
+/*================ SKILLS ================*/
+
+.skills-grid{
+
+    display:grid !important;
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.skill-card{
+
+    width:100%;
+
+    padding:22px;
+
+}
+
+.skill-card h3{
+
+    font-size:1rem;
+
+}
+
+.skill-card p{
+
+    font-size:.9rem;
+
+}
+
+/*================ FLOATING ICONS ================*/
+
+.floating{
+
+    display:none !important;
+
+}
+
+}
+
+/*==================================================
+            MOBILE PART-4
+==================================================*/
+
+@media (max-width:768px){
+
+/*================ PROJECT =================*/
+
+.project-wrapper{
+
+    display:flex !important;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.project-image{
+
+    order:-1;
+
+    text-align:center;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    max-width:320px;
+
+    margin:auto;
+
+}
+
+.project-content{
+
+    text-align:center;
+
+}
+
+.project-content h2{
+
+    font-size:1.8rem;
+
+}
+
+.project-content p{
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+.project-features{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.feature-card{
+
+    width:100%;
+
+}
+
+.project-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.project-buttons .btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+/*================ TECH STACK =================*/
+
+.tech-stack{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+/*================ GITHUB =================*/
+
+.github-profile{
+
+    text-align:center;
+
+}
+
+.github-profile img{
+
+    width:110px;
+
+    height:110px;
+
+}
+
+.github-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+.github-card{
+
+    padding:20px;
+
+}
+
+.repo-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+/*================ TIMELINE =================*/
+
+.timeline{
+
+    padding-left:18px;
+
+}
+
+.timeline::before{
+
+    left:6px;
+
+}
+
+.timeline-item{
+
+    margin-bottom:35px;
+
+}
+
+.timeline-dot{
+
+    left:-3px;
+
+}
+
+.timeline-content{
+
+    margin-left:20px;
+
+}
+
+/*================ CERTIFICATES =================*/
+
+.certificate-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+/*================ CONTACT =================*/
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+.contact-form{
+
+    padding:25px;
+
+}
+
+.contact-info{
+
+    text-align:center;
+
+}
+
+.contact-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+/*================ FOOTER =================*/
+
+.footer-top{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+    gap:30px;
+
+}
+
+.footer-links{
+
+    justify-content:center;
+
+}
+
+.footer-social{
+
+    justify-content:center;
+
+}
+
+.footer-bottom{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    text-align:center;
+
+}
+
+/*================ SCROLL BUTTON =================*/
+
+.back-to-top{
+
+    width:45px;
+
+    height:45px;
+
+    right:18px;
+
+    bottom:18px;
+
+}
+
+}
+
+/*==================================================
+                MOBILE FINAL POLISH
+==================================================*/
+
+@media (max-width:768px){
+
+/* ---------- Common Section ---------- */
+
+.section{
+
+    padding:70px 0;
+
+}
+
+.section-title{
+
+    margin-bottom:45px;
+
+}
+
+.section-title h2{
+
+    font-size:2rem;
+
+}
+
+.section-title p{
+
+    font-size:.95rem;
+
+}
+
+/* ---------- Cards ---------- */
+
+.skill-card,
+.github-card,
+.certificate-card,
+.achievement-card,
+.contact-card,
+.info-card{
+
+    border-radius:18px;
+
+    padding:22px;
+
+}
+
+/* ---------- Buttons ---------- */
+
+.btn{
+
+    width:100%;
+
+    justify-content:center;
+
+    padding:14px 20px;
+
+    font-size:.95rem;
+
+}
+
+/* ---------- Images ---------- */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ---------- Logo ---------- */
+
+.logo{
+
+    font-size:1.6rem;
+
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar{
+
+    width:85%;
+
+}
+
+/* ---------- Typing ---------- */
+
+.typing{
+
+    text-align:center;
+
+    justify-content:center;
+
+}
+
+/* ---------- Scroll Down ---------- */
+
+.scroll-down{
+
+    display:none;
+
+}
+
+/* ---------- Timeline ---------- */
+
+.timeline-content{
+
+    width:100%;
+
+}
+
+/* ---------- Tech Stack ---------- */
+
+.tech-stack span{
+
+    padding:8px 14px;
+
+    font-size:.85rem;
+
+}
+
+/* ---------- Footer ---------- */
+
+.footer{
+
+    text-align:center;
+
+}
+
+/* ---------- Contact Form ---------- */
+
+.contact-form input,
+.contact-form textarea{
+
+    font-size:16px;
+
+}
+
+/* ---------- Prevent Overflow ---------- */
+
+*{
+
+    word-wrap:break-word;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+}
