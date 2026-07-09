@@ -616,3 +616,53 @@
     }
 
 }
+
+
+
+/*==================================================
+        MULTIPLE PROJECT SPACING
+==================================================*/
+
+.project-two{
+
+    margin-top:120px;
+
+}
+
+/* Alternate Project Layout */
+
+.project-two .project-image{
+
+    order:2;
+
+}
+
+.project-two .project-content{
+
+    order:1;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .project-two{
+
+        margin-top:80px;
+
+    }
+
+    .project-two .project-image{
+
+        order:-1;
+
+    }
+
+    .project-two .project-content{
+
+        order:1;
+
+    }
+
+}
