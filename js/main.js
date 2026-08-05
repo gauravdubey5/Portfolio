@@ -1,236 +1,135 @@
 /*==================================================
-                MOBILE MENU
+            GITHUB DASHBOARD
 ==================================================*/
 
-const menuBtn = document.querySelector(".menu-btn");
-const navbar = document.querySelector(".navbar");
-const overlay = document.querySelector(".menu-overlay");
+const username = "gauravdubey5";
 
-if (menuBtn && navbar) {
+const profileURL = `https://api.github.com/users/${username}`;
+const repoURL = `https://api.github.com/users/${username}/repos?sort=updated&per_page=6`;
 
-    menuBtn.addEventListener("click", () => {
+const avatar = document.getElementById("github-avatar");
+const userName = document.getElementById("github-username");
+const bio = document.getElementById("github-bio");
+const locationText = document.getElementById("github-location");
 
-        navbar.classList.toggle("active");
+const repoCount = document.getElementById("repo-count");
+const followers = document.getElementById("followers");
+const following = document.getElementById("following");
+const publicGists = document.getElementById("public-gists");
 
-        menuBtn.classList.toggle("active");
-
-        if (overlay) {
-            overlay.classList.toggle("active");
-        }
-
-        document.body.classList.toggle("menu-open");
-
-    });
-
-}
-
-document.querySelectorAll(".navbar a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navbar.classList.remove("active");
-
-        menuBtn.classList.remove("active");
-
-        if (overlay) {
-            overlay.classList.remove("active");
-        }
-
-        document.body.classList.remove("menu-open");
-
-    });
-
-});
-
-if (overlay) {
-
-    overlay.addEventListener("click", () => {
-
-        navbar.classList.remove("active");
-
-        menuBtn.classList.remove("active");
-
-        overlay.classList.remove("active");
-
-        document.body.classList.remove("menu-open");
-
-    });
-
-}
-
-/* Close menu after click */
-
-document.querySelectorAll(".navbar a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navbar.classList.remove("active");
-
-        menuBtn.classList.remove("active");
-
-    });
-
-});
+const repoGrid = document.getElementById("github-projects");
 
 /*==================================================
-                STICKY HEADER
+            PROFILE
 ==================================================*/
 
-const header = document.querySelector(".header");
+async function loadProfile() {
 
-window.addEventListener("scroll", () => {
+    try {
 
-    if(window.scrollY > 50){
+        const response = await fetch(profileURL);
 
-        header.style.background = "rgba(5,8,22,.92)";
-        header.style.backdropFilter = "blur(20px)";
-        header.style.boxShadow = "0 10px 25px rgba(0,0,0,.25)";
+        const data = await response.json();
 
-    }else{
+        avatar.src = data.avatar_url;
 
-        header.style.background = "rgba(5,8,22,.65)";
-        header.style.boxShadow = "none";
+        userName.textContent = data.name || data.login;
+
+        bio.textContent = data.bio || "Azure DevOps Engineer";
+
+        locationText.textContent = data.location || "India";
+
+        repoCount.textContent = data.public_repos;
+
+        followers.textContent = data.followers;
+
+        following.textContent = data.following;
+
+        publicGists.textContent = data.public_gists;
 
     }
 
-});
+    catch(error){
 
-/*==================================================
-                BACK TO TOP
-==================================================*/
-
-const backToTop = document.getElementById("backToTop");
-
-window.addEventListener("scroll",()=>{
-
-    if(window.scrollY > 500){
-
-        backToTop.classList.add("show");
-
-    }else{
-
-        backToTop.classList.remove("show");
+        console.error(error);
 
     }
-
-});
-
-backToTop.addEventListener("click",()=>{
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
-
-});
-
-/*==================================================
-                FOOTER YEAR
-==================================================*/
-
-const year = document.getElementById("year");
-
-if(year){
-
-    year.textContent = new Date().getFullYear();
 
 }
 
 /*==================================================
-            ACTIVE NAVIGATION
+            REPOSITORIES
 ==================================================*/
 
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".navbar a");
+async function loadRepositories(){
 
-window.addEventListener("scroll",()=>{
+    try{
 
-    let current = "";
+        const response = await fetch(repoURL);
 
-    sections.forEach(section=>{
+        const repos = await response.json();
 
-        const sectionTop = section.offsetTop - 120;
+        repoGrid.innerHTML = "";
 
-        const sectionHeight = section.offsetHeight;
+        repos.forEach(repo=>{
 
-        if(window.scrollY >= sectionTop){
+            repoGrid.innerHTML += `
 
-            current = section.getAttribute("id");
+            <div class="repo-card">
 
-        }
+                <h3>${repo.name}</h3>
 
-    });
+                <p>
 
-    navLinks.forEach(link=>{
+                    ${repo.description || "No description available."}
 
-        link.classList.remove("active");
+                </p>
 
-        if(link.getAttribute("href") === "#" + current){
+                <div class="repo-info">
 
-            link.classList.add("active");
+                    <span>
 
-        }
+                        ⭐ ${repo.stargazers_count}
 
-    });
+                    </span>
 
-});
+                    <span>
 
+                        🍴 ${repo.forks_count}
 
+                    </span>
 
-/*==================================================
-                COUNTER
-==================================================*/
+                    <span>
 
-const counters = document.querySelectorAll(".counter");
+                        💻 ${repo.language || "N/A"}
 
-const counterObserver = new IntersectionObserver((entries)=>{
+                    </span>
 
-    entries.forEach(entry=>{
+                </div>
 
-        if(!entry.isIntersecting) return;
+                <a href="${repo.html_url}"
 
-        const counter = entry.target;
+                   target="_blank">
 
-        const target =
-            parseInt(counter.textContent);
+                    View Repository
 
-        let count = 0;
+                </a>
 
-        const speed = target / 80;
+            </div>
 
-        const update = ()=>{
+            `;
 
-            count += speed;
+        });
 
-            if(count < target){
+    }
 
-                counter.textContent =
-                    Math.ceil(count);
+    catch(error){
 
-                requestAnimationFrame(update);
+        console.log(error);
 
-            }else{
+    }
 
-                counter.textContent =
-                    target + "+";
+}
+loadProfile();
 
-            }
-
-        };
-
-        update();
-
-        counterObserver.unobserve(counter);
-
-    });
-
-});
-
-counters.forEach(counter=>{
-
-    counterObserver.observe(counter);
-
-});
+loadRepositories();
