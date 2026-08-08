@@ -417,3 +417,71 @@
 }
 
 }
+
+
+/* =========================================
+   GITHUB BANNER
+========================================= */
+
+.github-banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0;
+    
+    /* IMPORTANT */
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.github-banner img {
+    display: block;
+
+    width: 100% !important;
+    height: auto !important;
+
+    min-width: 0;
+    max-width: 100% !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+    object-position: center;
+
+    border-radius: inherit;
+}
+@media (max-width: 768px) {
+
+    .github-banner {
+        width: calc(100% - 30px);
+        margin: 25px auto;
+        height: auto !important;
+        max-height: none !important;
+        overflow: hidden;
+        border-radius: 14px;
+    }
+
+    .github-banner img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+}
+@media (max-width: 480px) {
+
+    .github-banner {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+        border-radius: 12px;
+    }
+
+    .github-banner img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
