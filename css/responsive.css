@@ -1,487 +1,286 @@
-/*=========================================
-        1400px
-=========================================*/
+/* ==========================================================================
+   RESPONSIVE & MOBILE ADAPTATION // CLOUDVERSE
+   ========================================================================== */
 
-@media(max-width:1400px){
-
-.container{
-
-    width:92%;
-
+/* Mobile Nav Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: var(--hud-height);
+  right: -100%;
+  width: 290px;
+  height: calc(100vh - var(--hud-height));
+  background: rgba(4, 9, 24, 0.98);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-left: 1px solid var(--border-cyan);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999;
+  transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.8);
 }
 
-.hero h1{
-
-    font-size:4rem;
-
+.mobile-nav-drawer.open {
+  right: 0;
 }
 
-.hero-container{
-
-    gap:50px;
-
+.drawer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.image-card{
-
-    width:360px;
-
+.drawer-nav-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
 }
 
+.drawer-nav-list a:hover,
+.drawer-nav-list a.active {
+  color: #FFFFFF;
+  background: rgba(0, 163, 255, 0.15);
+  border-color: var(--border-cyan);
 }
 
-/*=========================================
-        1200px
-=========================================*/
-
-@media(max-width:1200px){
-
-.hero-container{
-
-    gap:40px;
-
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-.about-grid{
-
-    grid-template-columns:320px 1fr;
-
+.drawer-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.project-wrapper{
+/* ==========================================================================
+   BREAKPOINTS
+   ========================================================================== */
 
-    gap:40px;
+/* Large Tablets & Small Laptops (<= 1080px) */
+@media (max-width: 1080px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
 
+  .hero-telemetry {
+    align-items: center;
+  }
+
+  .hero-badge-wrap,
+  .hero-cta-cluster {
+    justify-content: center;
+  }
+
+  .hero-description {
+    margin: 0 auto;
+  }
+
+  .hero-metrics-row {
+    max-width: 600px;
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .islands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arch-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .arch-inspector {
+    border-left: none;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .subnets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-citadel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hq-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-narrative {
+    align-items: center;
+  }
+
+  .about-meta-grid {
+    max-width: 500px;
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .contact-terminal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-vault-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
-.skills-grid{
+/* Tablets (<= 860px) */
+@media (max-width: 860px) {
+  .hud-nav {
+    display: none;
+  }
 
-    grid-template-columns:repeat(3,1fr);
+  .mobile-nav-toggle {
+    display: flex;
+  }
 
+  .recruiter-dock {
+    display: none; /* In mobile, navigation is through the hamburger and hero buttons */
+  }
+
+  .repos-dynamic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .islands-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-vault-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
 
-.learning-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.github-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.achievement-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.stats-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.contact-wrapper{
-
-    grid-template-columns:330px 1fr;
-
-}
-
-.footer-top{
-
-    grid-template-columns:2fr 1fr;
-
-}
-
-}
-
-/*=========================================
-        992px
-=========================================*/
-
-@media(max-width:992px){
-
-.section{
-
-    padding:90px 0;
-
-}
-
-.hero{
-
-    padding-top:120px;
-
-}
-
-.hero-container{
-
-    grid-template-columns:1fr;
-
-    text-align:center;
-
-}
-
-.hero p{
-
-    margin:auto auto 35px;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}
-
-.social-links{
-
-    justify-content:center;
-
-}
-
-.hero-image{
-
-    order:-1;
-
-}
-
-.image-card{
-
-    width:320px;
-
-}
-
-.about-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.about-image{
-
-    max-width:350px;
-
-    margin:auto;
-
-}
-
-.project-wrapper{
-
-    grid-template-columns:1fr;
-
-}
-
-.contact-wrapper{
-
-    grid-template-columns:1fr;
-
-}
-
-.architecture-flow{
-
-    flex-direction:column;
-
-}
-
-.flow-arrow{
-
-    transform:rotate(90deg);
-
-}
-
-.timeline{
-
-    padding-left:25px;
-
-}
-
-.footer-top{
-
-    grid-template-columns:1fr;
-
-}
-
-}
-
-/*=========================================
-        768px
-=========================================*/
-
-@media(max-width:768px){
-
-.navbar{
-
-    position:fixed;
-
-    top:80px;
-
-    right:-100%;
-
-    width:280px;
-
-    height:calc(100vh - 80px);
-
-    background:#08111F;
-
-    transition:.35s;
-
-    padding:40px 30px;
-
-}
-
-.navbar.active{
-
-    right:0;
-
-}
-
-.navbar ul{
-
-    flex-direction:column;
-
-    gap:25px;
-
-}
-
-.menu-btn{
-
-    display:flex;
-
-}
-
-.hero h1{
-
-    font-size:3rem;
-
-}
-
-.hero h2{
-
-    font-size:1.5rem;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-}
-
-.hero-buttons .btn{
-
-    width:100%;
-
-    justify-content:center;
-
-}
-
-.skills-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.learning-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.github-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.stats-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.achievement-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.certificate-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.about-info{
-
-    grid-template-columns:1fr;
-
-}
-
-.project-features{
-
-    grid-template-columns:1fr;
-
-}
-
-.project-buttons{
-
-    flex-direction:column;
-
-}
-
-.tech-stack{
-
-    justify-content:center;
-
-}
-
-.footer-bottom{
-
-    flex-direction:column;
-
-    text-align:center;
-
-}
-
-}
-
-/*=========================================
-        576px
-=========================================*/
-
-@media(max-width:576px){
-
-.hero{
-
-    min-height:auto;
-
-}
-
-.hero h1{
-
-    font-size:2.5rem;
-
-}
-
-.hero h2{
-
-    font-size:1.3rem;
-
-}
-
-.section-title h2{
-
-    font-size:2rem;
-
-}
-
-.image-card{
-
-    width:260px;
-
-}
-
-.contact-form{
-
-    padding:25px;
-
-}
-
-.contact-card{
-
-    flex-direction:column;
-
-    text-align:center;
-
-}
-
-.back-to-top{
-
-    width:48px;
-
-    height:48px;
-
-    right:20px;
-
-    bottom:20px;
-
-}
-
-.btn{
-
-    padding:14px 22px;
-
-}
-
-}
-
-
-/* =========================================
-   GITHUB BANNER
-========================================= */
-
-.github-banner {
+/* Mobile Devices (<= 640px) */
+@media (max-width: 640px) {
+  :root {
+    --hud-height: 64px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-deck {
+    padding: calc(var(--hud-height) + 1.5rem) 0 3rem 0;
+  }
+
+  .holo-ring-outer {
+    width: 290px;
+    height: 290px;
+  }
+
+  .holo-ring-inner {
+    width: 240px;
+    height: 240px;
+  }
+
+  .holo-avatar-container {
+    width: 190px;
+    height: 190px;
+  }
+
+  .orbit-node {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  .hero-metrics-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .hero-cta-cluster .btn {
     width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0;
-    
-    /* IMPORTANT */
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
+  }
 
-    border-radius: 18px;
-    overflow: hidden;
-}
+  .section-title {
+    font-size: 1.85rem;
+  }
 
-.github-banner img {
-    display: block;
+  .journey-timeline::before {
+    left: 18px;
+  }
 
-    width: 100% !important;
-    height: auto !important;
+  .timeline-milestone {
+    gap: 1.25rem;
+  }
 
-    min-width: 0;
-    max-width: 100% !important;
-    max-height: none !important;
+  .milestone-node {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
 
-    object-fit: contain !important;
-    object-position: center;
+  .milestone-card {
+    padding: 1.25rem;
+  }
 
-    border-radius: inherit;
-}
-@media (max-width: 768px) {
+  .arch-diagram-canvas {
+    padding: 1.25rem;
+  }
 
-    .github-banner {
-        width: calc(100% - 30px);
-        margin: 25px auto;
-        height: auto !important;
-        max-height: none !important;
-        overflow: hidden;
-        border-radius: 14px;
-    }
+  .arch-toolbar {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
 
-    .github-banner img {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 100% !important;
-        max-height: none !important;
-        object-fit: contain !important;
-    }
-}
-@media (max-width: 480px) {
+  .arch-inspector {
+    padding: 1.25rem;
+  }
 
-    .github-banner {
-        width: calc(100% - 20px);
-        margin: 20px auto;
-        border-radius: 12px;
-    }
+  .github-profile-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
 
-    .github-banner img {
-        width: 100% !important;
-        height: auto !important;
-    }
+  .gh-live-stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
 }

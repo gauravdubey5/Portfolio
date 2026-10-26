@@ -2,2266 +2,1465 @@
 <html lang="en">
 
 <head>
-    <!-- =======================
-         Basic SEO
-    ======================== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ==========================================================================
+       META & SEO DATA // GAURAV DUBEY - CLOUDVERSE
+       ========================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Dubey | Azure & DevOps Engineer | Cloudverse Experience</title>
 
-    <title>Gaurav Dubey | DevOps & Cloud Engineer</title>
+  <meta name="description"
+    content="Gaurav Dubey - Azure & DevOps Engineer specializing in Microsoft Azure, Terraform, CI/CD Automation, Linux, and Cloud Infrastructure as Code. Explore the interactive Cloudverse experience.">
+  <meta name="keywords"
+    content="Gaurav Dubey, Azure DevOps Engineer, Terraform, Infrastructure as Code, CI/CD, GitHub Actions, Microsoft Azure, Linux, Cloudverse, Cloud Architecture">
+  <meta name="author" content="Gaurav Dubey">
 
-    <meta name="description"
-        content="Gaurav Dubey - DevOps & Cloud Engineer specializing in Microsoft Azure, Terraform, Linux, GitHub Actions and Infrastructure as Code.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gaurav Dubey | Azure & DevOps Engineer - Cloudverse">
+  <meta property="og:description"
+    content="Explore scalable cloud infrastructure, Terraform modules, CI/CD automation, and live architecture topologies in the interactive Cloudverse.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gauravdubey.pages.dev/">
+  <meta property="og:image" content="assets/images/azure-enterprise.png">
 
-    <meta name="keywords"
-        content="DevOps Engineer, Azure, Terraform, GitHub Actions, Linux, Cloud Engineer, Infrastructure as Code">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon.svg">
 
-    <meta name="author" content="Gaurav Dubey">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Gaurav Dubey | DevOps Engineer">
-    <meta property="og:description" content="Portfolio of Gaurav Dubey - Azure | Terraform | DevOps">
-    <meta property="og:type" content="website">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/skill.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/project.css">
-
-
-
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cloudverse.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <div class="loader"></div>
+  <!-- ==========================================================================
+       3D WEBGL CLOUDVERSE CANVAS & BACKGROUND
+       ========================================================================== -->
+  <canvas id="cloudverse-canvas" aria-hidden="true"></canvas>
+  <div class="cloudverse-grid-overlay" aria-hidden="true"></div>
 
-    <div class="cursor"></div>
+  <!-- Page Content Wrapper -->
+  <div class="cloudverse-content">
 
-    <!--==========================
-            Navigation
-    ===========================-->
+    <!-- ==========================================================================
+         CYBER HUD HEADER & CONTROLS
+         ========================================================================== -->
+    <header class="cyber-hud" id="main-hud">
+      <div class="hud-container">
 
-    <header class="header">
+        <!-- Brand Identity -->
+        <a href="#hero" class="hud-brand" aria-label="Gaurav Dubey Cloudverse Home">
+          <div class="brand-symbol">
+            <i class="fa-solid fa-cloud-bolt"></i>
+          </div>
+          <div class="brand-text">
+            <h1>GAURAV DUBEY</h1>
+            <span class="brand-tag">AZURE &bull; DEVOPS</span>
+          </div>
+        </a>
 
-        <div class="container">
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Main Navigation">
+          <ul class="hud-nav">
+            <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#architecture-map"><i class="fa-solid fa-diagram-project"></i> Cloud Map</a></li>
+            <li><a href="#island-about"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+            <li><a href="#island-skills"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+            <li><a href="#island-projects"><i class="fa-solid fa-cubes-stacked"></i> Projects</a></li>
+            <li><a href="#island-certs"><i class="fa-solid fa-certificate"></i> Certs</a></li>
+            <li><a href="#island-journey"><i class="fa-solid fa-route"></i> Journey</a></li>
+            <li><a href="#island-contact"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+          </ul>
+        </nav>
 
-            <a href="#" class="logo">
-                GAURAV<span> DUBEY</span>
-            </a>
+        <!-- HUD Controls & Actions -->
+        <div class="hud-actions">
 
-            <nav class="navbar">
+          <!-- Recruiter Mode Fast-Track Switch -->
+          <button id="recruiter-mode-toggle" class="mode-toggle-btn"
+            title="Toggle between 3D Cloudverse and Fast Recruiter Layout"
+            aria-label="Toggle Recruiter Quick View Mode">
+            <i class="fa-solid fa-briefcase"></i> Recruiter Mode
+          </button>
 
-                <ul>
+          <!-- Ambient Audio Synthesizer Toggle -->
+          <button id="ambient-audio-toggle" class="hud-btn" title="Toggle Futuristic Ambient Drone"
+            aria-label="Toggle Sound Effects">
+            <i class="fa-solid fa-volume-xmark"></i>
+          </button>
 
-                    <li><a href="#home">Home</a></li>
+          <!-- Direct Resume Download Button -->
+          <a href="assets/resume/Gaurav_Dubey_Azure_DevOps_Engineer.pdf" download
+            class="btn btn-primary btn-sm" id="hud-resume-btn"
+            title="Download Gaurav Dubey's Azure DevOps Resume (PDF)">
+            <i class="fa-solid fa-download"></i>
+            <span>Resume</span>
+          </a>
 
-                    <li><a href="#about">About</a></li>
-
-                    <li><a href="#skills">Skills</a></li>
-
-                    <li><a href="#projects">Projects</a></li>
-
-                    <li><a href="#experience">Experience</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
-
-                </ul>
-                
-
-            </nav>
-
-            <div class="nav-buttons">
-
-                <!-- <button id="theme-toggle">
-
-                    <i class="fa-solid fa-moon"></i>
-
-                </button> -->
-
-                <button class="menu-btn">
-
-                    <i class="fa-solid fa-bars"></i>
-
-                </button>
-
-            </div>
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hud-btn mobile-nav-toggle" aria-label="Open Navigation Drawer" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
         </div>
 
+      </div>
     </header>
-    <div class="menu-overlay"></div>
 
-    <!--==========================
-            Hero Section
-    ===========================-->
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+      <div class="drawer-header" style="margin-bottom:1.5rem;">
+        <span class="status-pill"><span class="pulse-dot"></span> Available for Roles</span>
+      </div>
+      <ul class="drawer-nav-list">
+        <li><a href="#hero"><i class="fa-solid fa-house"></i> Overview</a></li>
+        <li><a href="#architecture-map"><i class="fa-solid fa-diagram-project"></i> Cloud Architecture</a></li>
+        <li><a href="#island-about"><i class="fa-solid fa-user-astronaut"></i> About HQ</a></li>
+        <li><a href="#island-skills"><i class="fa-solid fa-microchip"></i> Technical Skills</a></li>
+        <li><a href="#island-projects"><i class="fa-solid fa-cubes-stacked"></i> Featured Projects</a></li>
+        <li><a href="#island-certs"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+        <li><a href="#island-journey"><i class="fa-solid fa-route"></i> Career Journey</a></li>
+        <li><a href="#island-contact"><i class="fa-solid fa-paper-plane"></i> Contact & Terminal</a></li>
+      </ul>
+      <div class="drawer-footer" style="padding-top:1.5rem; border-top:1px solid var(--border-subtle);">
+        <a href="assets/resume/Gaurav_Dubey_Azure_DevOps_Engineer.pdf" download
+          class="btn btn-primary" style="width:100%;margin-bottom:1rem;">
+          <i class="fa-solid fa-download"></i> Download Resume (PDF)
+        </a>
+        <div style="display:flex; justify-content:center; gap:1.25rem;">
+          <a href="https://github.com/gauravdubey5" target="_blank" rel="noopener noreferrer" style="font-size:1.3rem;"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/gauravdubey5" target="_blank" rel="noopener noreferrer" style="font-size:1.3rem;"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:gaurav25eng@gmail.com" style="font-size:1.3rem;"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
 
-    <section id="home" class="hero">
+    <main id="main-content">
 
-        <div class="container hero-container">
+      <!-- ==========================================================================
+           HERO EXPERIENCE // CENTRAL CLOUD DECK
+           ========================================================================== -->
+      <section id="hero" class="hero-deck">
+        <div class="container">
+          <div class="hero-grid">
 
-            <!-- Left -->
-
-            <div class="hero-content">
-
-                <span class="badge">
-
-                    🚀 Available for DevOps Opportunities
-
+            <!-- Hero Telemetry & Identity -->
+            <div class="hero-telemetry">
+              <div class="hero-badge-wrap">
+                <span class="status-pill">
+                  <span class="pulse-dot"></span>
+                  Available for DevOps Opportunities
                 </span>
-
-                <h3>Hello, I'm</h3>
-
-                <h1>
-
-                    Gaurav <span>Dubey</span>
-
-                </h1>
-
-                <h2>
-
-                    DevOps & Cloud Engineer
-
-                </h2>
-
-                <p>
-
-                    Passionate about building scalable cloud infrastructure,
-                    automating deployments and implementing Infrastructure as Code
-                    using Microsoft Azure, Terraform, Linux and GitHub Actions.
-
-                </p>
-
-
-
-                <!-- Buttons -->
-
-                <div class="hero-buttons">
-
-                    <a href="assets/resume/Gaurav_Dubey_Azure_DevOps_Engineer.pdf"
-                        class="btn primary" download>
-
-                        <i class="fa-solid fa-download"></i>
-
-                        Download Resume
-
-                    </a>
-
-                    <a href="#projects"
-                        class="btn secondary">
-
-                        View Projects
-
-                    </a>
-
-                </div>
-
-                <!-- Social -->
-
-                <div class="social-links">
-
-                    <a href="https://github.com/gauravdubey5"
-                        target="_blank">
-
-                        <i class="fab fa-github"></i>
-
-                    </a>
-
-                    <a href="https://linkedin.com/in/gauravdubey5"
-                        target="_blank">
-
-                        <i class="fab fa-linkedin"></i>
-
-                    </a>
-
-                    <a href="mailto:gaurav25eng@gmail.com">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Right -->
-
-            <div class="hero-image">
-
-                <div class="image-card">
-
-                    <img src="assets/images/profile.png"
-                        alt="Gaurav Dubey">
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Scroll -->
-
-        <div class="scroll-down">
-
-            <a href="#about">
-
-                <i class="fa-solid fa-angles-down"></i>
-
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- ==========================================
-                ABOUT SECTION
-=========================================== -->
-
-<section id="about" class="about section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>ABOUT ME</span>
-
-            <h2>Building Reliable Cloud Infrastructure</h2>
-
-            <p>
-                I am a passionate DevOps & Cloud Engineer focused on
-                Infrastructure as Code, Cloud Automation, CI/CD pipelines,
-                and scalable deployments. I enjoy learning modern DevOps
-                tools and building production-ready cloud solutions.
-            </p>
-
-        </div>
-
-        <div class="about-grid">
-
-            <!-- Left -->
-
-            <div class="about-image">
-
-                <img src="assets/images/profile.png"
-                    alt="Gaurav Dubey">
-
-            </div>
-
-            <!-- Right -->
-
-            <div class="about-content">
-
-                <h3>
-                    DevOps Engineer &
-                    <span>Cloud Enthusiast</span>
-                </h3>
-
-                <p>
-
-                    I'm Gaurav Dubey, a Computer Science Engineering graduate
-                    passionate about Microsoft Azure, Terraform, Linux,
-                    GitHub Actions and Infrastructure as Code.
-
-                    My goal is to automate infrastructure, simplify cloud
-                    deployments and build secure, scalable environments.
-
-                </p>
-
-                <div class="about-info">
-
-                    <div class="info-card">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        <div>
-
-                            <h4>Location</h4>
-
-                            <span>Varanasi, India</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-card">
-
-                        <i class="fa-solid fa-graduation-cap"></i>
-
-                        <div>
-
-                            <h4>Education</h4>
-
-                            <span>B.Tech CSE</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-card">
-
-                        <i class="fa-solid fa-briefcase"></i>
-
-                        <div>
-
-                            <h4>Experience</h4>
-
-                            <span>DevOps Intern</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-card">
-
-                        <i class="fa-solid fa-language"></i>
-
-                        <div>
-
-                            <h4>Languages</h4>
-
-                            <span>English • Hindi</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==========================================
-            STATS SECTION
-=========================================== -->
-
-<section class="stats">
-
-    <div class="container">
-
-        <div class="stats-grid">
-
-            <div class="stat-card">
-
-                <h2 class="counter">2+</h2>
-
-                <p>Projects Completed</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2 class="counter">8+</h2>
-
-                <p>Cloud Technologies</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2 class="counter">1+</h2>
-
-                <p>Internship</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2 class="counter">100%</h2>
-
-                <p>Learning Mindset</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-                    SKILLS SECTION
-====================================================== -->
-
-<section id="skills" class="skills section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>TECHNICAL SKILLS</span>
-
-            <h2>Technologies I Work With</h2>
-
-            <p>
-                My primary focus is building cloud infrastructure,
-                automating deployments and implementing DevOps best practices.
-            </p>
-
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <i class="fa-brands fa-microsoft"></i>
-                <h3>Microsoft Azure</h3>
-                <p>Cloud Infrastructure & Services</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-server"></i>
-                <h3>Terraform</h3>
-                <p>Infrastructure as Code</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-brands fa-linux"></i>
-                <h3>Linux</h3>
-                <p>Ubuntu • Shell • Administration</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-brands fa-git-alt"></i>
-                <h3>Git</h3>
-                <p>Version Control</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-brands fa-github"></i>
-                <h3>GitHub</h3>
-                <p>Repositories & Collaboration</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-code-branch"></i>
-                <h3>GitHub Actions</h3>
-                <p>CI/CD Automation</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-terminal"></i>
-                <h3>Bash</h3>
-                <p>Linux Automation</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-network-wired"></i>
-                <h3>Networking</h3>
-                <p>VNet • NSG • Subnetting</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-                SKILL PROGRESS
-====================================================== -->
-
-<section class="skill-progress">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>PROFICIENCY</span>
-
-            <h2>Current Skill Level</h2>
-
-        </div>
-
-        <div class="progress-wrapper">
-
-            <div class="progress-item">
-
-                <div class="progress-title">
-
-                    <span>Microsoft Azure</span>
-
-                    <span>85%</span>
-
-                </div>
-
-                <div class="progress-bar">
-
-                    <div class="progress-fill azure"></div>
-
-                </div>
-
-            </div>
-
-            <div class="progress-item">
-
-                <div class="progress-title">
-
-                    <span>Terraform</span>
-
-                    <span>80%</span>
-
-                </div>
-
-                <div class="progress-bar">
-
-                    <div class="progress-fill terraform"></div>
-
-                </div>
-
-            </div>
-
-            <div class="progress-item">
-
-                <div class="progress-title">
-
-                    <span>Linux</span>
-
-                    <span>85%</span>
-
-                </div>
-
-                <div class="progress-bar">
-
-                    <div class="progress-fill linux"></div>
-
-                </div>
-
-            </div>
-
-            <div class="progress-item">
-
-                <div class="progress-title">
-
-                    <span>Git & GitHub</span>
-
-                    <span>90%</span>
-
-                </div>
-
-                <div class="progress-bar">
-
-                    <div class="progress-fill git"></div>
-
-                </div>
-
-            </div>
-
-            <div class="progress-item">
-
-                <div class="progress-title">
-
-                    <span>GitHub Actions</span>
-
-                    <span>75%</span>
-
-                </div>
-
-                <div class="progress-bar">
-
-                    <div class="progress-fill actions"></div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-                CURRENT LEARNING
-====================================================== -->
-
-<section class="learning section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>LEARNING</span>
-
-            <h2>Currently Exploring</h2>
-
-        </div>
-
-        <div class="learning-grid">
-
-            <div class="learning-card">
-
-                <i class="fa-brands fa-docker"></i>
-
-                <h3>Docker</h3>
-
-                <span>In Progress</span>
-
-            </div>
-
-            <div class="learning-card">
-
-                <i class="fa-solid fa-dharmachakra"></i>
-
-                <h3>Kubernetes</h3>
-
-                <span>Next Target</span>
-
-            </div>
-
-            <div class="learning-card">
-
-                <i class="fa-solid fa-chart-line"></i>
-
-                <h3>Monitoring</h3>
-
-                <span>Upcoming</span>
-
-            </div>
-
-            <div class="learning-card">
-
-                <i class="fa-solid fa-cloud"></i>
-
-                <h3>Azure DevOps</h3>
-
-                <span>Advanced</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-                FEATURED PROJECT
-====================================================== -->
-
-<!-- ======================================================
-                FEATURED PROJECTS
-====================================================== -->
-
-<section id="projects" class="featured-project section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>FEATURED PROJECTS</span>
-
-            <p>
-
-                Hands-on DevOps and Cloud projects demonstrating
-                Infrastructure as Code (IaC), CI/CD automation,
-                Microsoft Azure provisioning and modern DevOps practices.
-
-            </p>
-
-        </div>
-
-<!-- ======================================================
-        PROJECT 1 - AZURE ENTERPRISE INFRASTRUCTURE
-====================================================== -->
-
-<div class="project-wrapper">
-
-    <!-- Left Side -->
-
-    <div class="project-image">
-
-        <img
-            src="assets/images/azure-enterprise.png"
-            alt="Azure Enterprise Infrastructure with Terraform">
-
-        <div class="project-status">
-
-            <span class="live-dot"></span>
-
-            Production Style Project
-
-        </div>
-
-    </div>
-
-    <!-- Right Side -->
-
-    <div class="project-content">
-
-        <div class="project-tag">
-
-            <span>Terraform</span>
-
-            <span>Microsoft Azure</span>
-
-            <span>Infrastructure as Code</span>
-
-        </div>
-
-        <h3>
-
-            Azure Enterprise Infrastructure
-            with Terraform
-
-        </h3>
-
-        <p>
-
-            Designed and deployed a production-style Microsoft Azure
-            infrastructure using Terraform following Infrastructure
-            as Code (IaC) best practices.
-
-            The project provisions Azure Virtual Networks, Subnets,
-            Network Security Groups, Virtual Machines and Storage
-            resources through reusable Terraform modules, enabling
-            scalable, repeatable and automated cloud deployments.
-
-        </p>
-
-        <!-- Features -->
-
-        <div class="project-features">
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Modular Terraform Architecture
-            </div>
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Azure Virtual Network
-            </div>
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Azure Subnets
-            </div>
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Network Security Groups
-            </div>
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Azure Virtual Machines
-            </div>
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Azure Storage
-            </div>
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Infrastructure Automation
-            </div>
-
-            <div>
-                <i class="fa-solid fa-check"></i>
-                Infrastructure as Code
-            </div>
-
-        </div>
-
-        <!-- Tech Stack -->
-
-        <div class="tech-stack">
-
-            <span>Terraform</span>
-            <span>Azure</span>
-            <span>Azure CLI</span>
-            <span>HCL</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>PowerShell</span>
-            <span>IaC</span>
-
-        </div>
-
-        <!-- Buttons -->
-
-        <div class="project-buttons">
-
-            <a href="https://github.com/gauravdubey5/terraform-enterprise-infrastructure"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn primary">
-
-                <i class="fab fa-github"></i>
-
-                View Source
-
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-<!--==================================================
-        PROJECT 2 - GITHUB ACTIONS CI/CD PIPELINE
-==================================================-->
-
-<div class="project-wrapper project-two">
-
-    <!-- Left Side -->
-
-    <div class="project-image">
-
-        <img
-            src="assets/images/github-actions-terraform.png"
-            alt="GitHub Actions CI/CD Pipeline for Terraform">
-
-        <div class="project-status">
-
-            <span class="live-dot"></span>
-
-            CI/CD Automation
-
-        </div>
-
-    </div>
-
-    <!-- Right Side -->
-
-    <div class="project-content">
-
-        <div class="project-tag">
-
-            <span>GitHub Actions</span>
-
-            <span>CI/CD</span>
-
-            <span>Terraform</span>
-
-        </div>
-
-        <h3>
-
-            GitHub Actions
-            CI/CD Pipeline
-            for Terraform
-
-        </h3>
-
-        <p>
-
-            Built an automated CI/CD pipeline using GitHub Actions
-            to streamline Terraform workflows for Microsoft Azure.
-
-            The pipeline automatically validates Terraform code,
-            checks formatting, generates execution plans and deploys
-            infrastructure using GitHub-hosted runners. It also
-            follows secure DevOps practices by storing Azure
-            credentials in GitHub Secrets.
-
-        </p>
-
-        <!-- Project Features -->
-
-        <div class="project-features">
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Automated CI/CD Pipeline
-
-            </div>
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Terraform Init & Validate
-
-            </div>
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Terraform Format Check
-
-            </div>
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Terraform Plan
-
-            </div>
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Terraform Apply
-
-            </div>
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                GitHub Secrets Integration
-
-            </div>
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Azure Infrastructure Deployment
-
-            </div>
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                YAML Workflow Automation
-
-            </div>
-
-        </div>
-
-        <!-- Tech Stack -->
-
-        <div class="tech-stack">
-
-            <span>GitHub Actions</span>
-
-            <span>Terraform</span>
-
-            <span>Microsoft Azure</span>
-
-            <span>Azure CLI</span>
-
-            <span>YAML</span>
-
-            <span>Git</span>
-
-            <span>GitHub</span>
-
-            <span>CI/CD</span>
-
-        </div>
-
-        <!-- Buttons -->
-
-        <div class="project-buttons">
-
-            <a
-                href="https://github.com/gauravdubey5/GitHub-Actions-CI-CD-Pipeline-Automation-"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn primary">
-
-                <i class="fab fa-github"></i>
-
-                View Source
-
-            </a>
-
-            <a
-                href="#"
-                class="btn secondary">
-
-                <i class="fa-solid fa-gears"></i>
-
-                Pipeline Demo Soon
-
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-<!-- ======================================================
-                DEPLOYMENT WORKFLOW
-====================================================== -->
-
-<section id="architecture" class="architecture section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>DEPLOYMENT WORKFLOW</span>
-
-            <h2>DevOps Deployment Pipeline</h2>
-
-            <p>
-
-                This portfolio follows a modern CI/CD workflow where every
-                code change is automatically built and deployed using
-                GitHub, GitHub Actions and Cloudflare Pages.
-
-            </p>
-
-        </div>
-
-        <div class="architecture-flow">
-
-            <!-- STEP 1 -->
-
-            <div class="flow-card" data-step="1">
-
-                <div class="flow-icon">
-
-                    <i class="fa-solid fa-laptop-code"></i>
-
-                </div>
-
-                <h3>Development</h3>
-
-                <p>
-
-                    Features and improvements are developed locally
-                    before being committed.
-
-                </p>
-
-            </div>
-
-            <div class="flow-arrow">
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <!-- STEP 2 -->
-
-            <div class="flow-card" data-step="2">
-
-                <div class="flow-icon">
-
-                    <i class="fa-brands fa-github"></i>
-
-                </div>
-
-                <h3>GitHub</h3>
-
-                <p>
-
-                    Source code is version controlled and pushed
-                    to the GitHub repository.
-
-                </p>
-
-            </div>
-
-            <div class="flow-arrow">
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <!-- STEP 3 -->
-
-            <div class="flow-card" data-step="3">
-
-                <div class="flow-icon">
-
-                    <i class="fa-solid fa-gears"></i>
-
-                </div>
-
-                <h3>GitHub Actions</h3>
-
-                <p>
-
-                    Automated workflow validates, builds and prepares
-                    the project for deployment.
-
-                </p>
-
-            </div>
-
-            <div class="flow-arrow">
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <!-- STEP 4 -->
-
-            <div class="flow-card" data-step="4">
-
-                <div class="flow-icon">
-
-                    <i class="fa-solid fa-cloud"></i>
-
-                </div>
-
-                <h3>Cloudflare Pages</h3>
-
-                <p>
-
-                    Cloudflare automatically deploys the latest
-                    production-ready build.
-
-                </p>
-
-            </div>
-
-            <div class="flow-arrow">
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <!-- STEP 5 -->
-
-            <div class="flow-card" data-step="5">
-
-                <div class="flow-icon">
-
-                    <i class="fa-solid fa-globe"></i>
-
-                </div>
-
-                <h3>Live Website</h3>
-
-                <p>
-
-                    Visitors always access the latest version through
-                    Cloudflare's global CDN with HTTPS enabled.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ======================================================
-                EXPERIENCE
-====================================================== -->
-
-<section id="experience" class="experience section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>EXPERIENCE</span>
-
-            <h2>Professional Journey</h2>
-
-        </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-date">
-                        2026 - Present
-                    </span>
-
-                    <h3>DevOps Intern</h3>
-
-                    <h4>DevOps Insider</h4>
-
-                    <p>
-
-                        Learning and working with Microsoft Azure,
-                        Linux, Git, GitHub, Terraform,
-                        Infrastructure as Code and cloud automation.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-date">
-
-                        2022 - 2026
-
-                    </span>
-
-                    <h3>
-
-                        Bachelor of Technology
-
-                    </h3>
-
-                    <h4>
-
-                        Computer Science Engineering
-
-                    </h4>
-
-                    <p>
-
-                        Built multiple academic and cloud projects while
-                        developing strong interest in DevOps and Cloud Computing.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-                    CERTIFICATIONS
-====================================================== -->
-
-<section id="certifications" class="certifications section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>CERTIFICATIONS</span>
-
-            <h2>Learning & Certifications</h2>
-
-            <p>
-                Continuously improving my DevOps and Cloud skills through
-                hands-on practice and professional learning.
-            </p>
-
-        </div>
-
-        <div class="certificate-grid">
-
-            <div class="certificate-card">
-
-                <div class="certificate-icon">
-                    <i class="fa-solid fa-award"></i>
-                </div>
-
-                <h3>Microsoft Azure</h3>
-
-                <p>Cloud Computing & Infrastructure</p>
-
-                <span class="status completed">
-                    Completed
+                <span class="tech-badge">
+                  <i class="fa-solid fa-location-dot" style="color:var(--cyber-cyan);"></i> Varanasi, India
                 </span>
+              </div>
 
-            </div>
-
-            <div class="certificate-card">
-
-                <div class="certificate-icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-
-                <h3>Terraform</h3>
-
-                <p>Infrastructure as Code</p>
-
-                <span class="status completed">
-                    Completed
-                </span>
-
-            </div>
-
-            <div class="certificate-card">
-
-                <div class="certificate-icon">
-                    <i class="fa-brands fa-linux"></i>
-                </div>
-
-                <h3>Linux</h3>
-
-                <p>System Administration</p>
-
-                <span class="status completed">
-                    Completed
-                </span>
-
-            </div>
-
-            <div class="certificate-card">
-
-                <div class="certificate-icon">
-                    <i class="fa-brands fa-docker"></i>
-                </div>
-
-                <h3>Docker</h3>
-
-                <p>Currently Learning</p>
-
-                <span class="status learning">
-                    In Progress
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-                    GITHUB DASHBOARD
-====================================================== -->
-
-<section id="github" class="github section">
-
-    <div class="container">
-
-        <!-- Section Title -->
-
-        <div class="section-title">
-
-            <span>GITHUB</span>
-
-            <h2>Open Source & DevOps Portfolio</h2>
-
-            <p>
-
-                Explore my GitHub profile, open-source projects,
-                Infrastructure as Code repositories, and DevOps automation work.
-
-            </p>
-
-        </div>
-
-        <!-- ================= Banner ================= -->
-
-        <div class="github-banner">
-
-            <img src="assets/images/github-banner.png"
-                 alt="GitHub Banner">
-
-        </div>
-
-        <!-- ================= Profile ================= -->
-
-        <div class="github-profile">
-
-            <img
-                id="github-avatar"
-                alt="GitHub Avatar">
-
-            <div class="github-profile-content">
-
-                <h3 id="github-username">
-
-                    Loading...
-
-                </h3>
-
-                <p class="github-role">
-
-                    Azure DevOps Engineer
-
+              <div class="hero-identity">
+                <p style="font-family:var(--font-mono); color:var(--cyber-cyan); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.25rem;">
+                  // CLOUD INFRASTRUCTURE ARCHITECT
                 </p>
-
-                <p id="github-bio">
-
-                    Fetching GitHub profile...
-
-                </p>
-
-                <div class="github-location">
-
-                    <span id="github-location">
-
-                        📍 India
-
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- ================= Stats ================= -->
-
-        <div class="github-stats">
-
-            <div class="github-card">
-
-                <i class="fa-solid fa-book"></i>
-
-                <h2 id="repo-count">
-
-                    --
-
-                </h2>
-
-                <p>
-
-                    Repositories
-
-                </p>
-
-            </div>
-
-            <div class="github-card">
-
-                <i class="fa-solid fa-users"></i>
-
-                <h2 id="followers">
-
-                    --
-
-                </h2>
-
-                <p>
-
-                    Followers
-
-                </p>
-
-            </div>
-
-            <div class="github-card">
-
-                <i class="fa-solid fa-user-plus"></i>
-
-                <h2 id="following">
-
-                    --
-
-                </h2>
-
-                <p>
-
-                    Following
-
-                </p>
-
-            </div>
-
-            <div class="github-card">
-
-                <i class="fa-solid fa-code-branch"></i>
-
-                <h2 id="public-gists">
-
-                    --
-
-                </h2>
-
-                <p>
-
-                    Public Gists
-
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- ================= DevOps Highlights ================= -->
-
-        <div class="github-highlights">
-
-            <div class="highlight-box">
-
-                <i class="fa-solid fa-cloud"></i>
-
-                <h4>
-
-                    Microsoft Azure
-
-                </h4>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="fa-solid fa-server"></i>
-
-                <h4>
-
-                    Terraform IaC
-
-                </h4>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="fa-solid fa-gears"></i>
-
-                <h4>
-
-                    GitHub Actions
-
-                </h4>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="fa-solid fa-code-branch"></i>
-
-                <h4>
-
-                    CI/CD Pipelines
-
-                </h4>
-
-            </div>
-
-        </div>
-                <!-- ======================================================
-                    GITHUB CONTRIBUTION GRAPH
-        ====================================================== -->
-
-        <div class="github-contributions">
-
-            <h3>
-
-                Contribution Activity
-
-            </h3>
-
-            <p>
-
-                Daily contribution history from GitHub.
-
-            </p>
-
-            <img
-                src="https://ghchart.rshah.org/0078D4/gauravdubey5"
-                alt="GitHub Contribution Graph">
-
-        </div>
-
-
-
-        <!-- ======================================================
-                    DEVOPS TECH STACK
-        ====================================================== -->
-
-        <div class="github-skills">
-
-            <h3>
-
-                DevOps Tech Stack
-
-            </h3>
-
-            <div class="skills-badges">
-
-                <span>Terraform</span>
-
-                <span>Microsoft Azure</span>
-
-                <span>Azure CLI</span>
-
-                <span>GitHub Actions</span>
-
-                <span>Git</span>
-
-                <span>Linux</span>
-
-                <span>PowerShell</span>
-
-                <span>YAML</span>
-
-                <span>HCL</span>
-
-                <span>Infrastructure as Code</span>
-
-                <span>CI/CD</span>
-
-                <span>Cloud Automation</span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ======================================================
-                    DEVOPS HIGHLIGHTS
-        ====================================================== -->
-
-        <div class="devops-overview">
-
-            <div class="overview-card">
-
-                <i class="fa-solid fa-cloud"></i>
-
-                <h3>
-
-                    Azure Cloud
-
-                </h3>
-
-                <p>
-
-                    Experience provisioning Azure infrastructure
-                    using Infrastructure as Code.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="overview-card">
-
-                <i class="fa-solid fa-code-branch"></i>
-
-                <h3>
-
-                    CI/CD
-
-                </h3>
-
-                <p>
-
-                    Automated deployment workflows
-                    using GitHub Actions.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="overview-card">
-
-                <i class="fa-solid fa-server"></i>
-
-                <h3>
-
-                    Terraform
-
-                </h3>
-
-                <p>
-
-                    Reusable modules and scalable
-                    infrastructure automation.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="overview-card">
-
-                <i class="fa-solid fa-shield-halved"></i>
-
-                <h3>
-
-                    DevSecOps
-
-                </h3>
-
-                <p>
-
-                    Infrastructure validation and
-                    security-first deployment practices.
-
-                </p>
-
-            </div>
-
-        </div>
-                <!-- ======================================================
-                    FEATURED REPOSITORIES
-        ====================================================== -->
-
-        <div class="github-featured">
-
-            <div class="section-subtitle">
-
-                <h3>Featured DevOps Projects</h3>
-
-                <p>
-
-                    Some of my highlighted Infrastructure as Code,
-                    Azure and CI/CD projects.
-
-                </p>
-
-            </div>
-
-            <div class="featured-grid">
-
-                <!-- Project 1 -->
-
-                <div class="featured-card">
-
-                    <div class="repo-header">
-
-                        <i class="fa-brands fa-microsoft"></i>
-
-                        <span>Featured</span>
-
-                    </div>
-
-                    <h3>
-
-                        Azure Enterprise Infrastructure
-
-                    </h3>
-
-                    <p>
-
-                        Enterprise-grade Azure infrastructure built
-                        using Terraform with reusable modules,
-                        networking, virtual machines and Infrastructure
-                        as Code best practices.
-
-                    </p>
-
-                    <div class="repo-tags">
-
-                        <span>Terraform</span>
-
-                        <span>Azure</span>
-
-                        <span>IaC</span>
-
-                    </div>
-
-                    <a href="https://github.com/gauravdubey5/terraform-enterprise-infrastructure"
-                       target="_blank"
-                       class="repo-btn">
-
-                        <i class="fab fa-github"></i>
-
-                        View Repository
-
-                    </a>
-
-                </div>
-
-                <!-- Project 2 -->
-
-                <div class="featured-card">
-
-                    <div class="repo-header">
-
-                        <i class="fa-brands fa-github"></i>
-
-                        <span>Featured</span>
-
-                    </div>
-
-                    <h3>
-
-                        GitHub Actions CI/CD Pipeline
-
-                    </h3>
-
-                    <p>
-
-                        Automated Terraform deployment pipeline
-                        using GitHub Actions, GitHub Secrets and
-                        Azure for continuous integration and delivery.
-
-                    </p>
-
-                    <div class="repo-tags">
-
-                        <span>GitHub Actions</span>
-
-                        <span>CI/CD</span>
-
-                        <span>Azure</span>
-
-                    </div>
-
-                    <a href="https://github.com/gauravdubey5"
-                       target="_blank"
-                       class="repo-btn">
-
-                        <i class="fab fa-github"></i>
-
-                        View Repository
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ======================================================
-                    LATEST REPOSITORIES
-        ====================================================== -->
-
-        <div class="latest-repositories">
-
-            <div class="section-subtitle">
-
-                <h3>
-
-                    Latest GitHub Repositories
-
-                </h3>
-
-                <p>
-
-                    Live repositories fetched directly
-                    from GitHub API.
-
-                </p>
-
-            </div>
-
-            <div
-
-                id="github-projects"
-
-                class="repo-grid">
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ======================================================
-                    GITHUB PROFILE BUTTON
-        ====================================================== -->
-
-        <div class="github-button">
-
-            <a
-
-                href="https://github.com/gauravdubey5"
-
-                target="_blank"
-
-                class="btn primary">
-
-                <i class="fab fa-github"></i>
-
-                Visit GitHub Profile
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ======================================================
-                    ACHIEVEMENTS
-====================================================== -->
-
-<section class="achievements section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>HIGHLIGHTS</span>
-
-            <h2>Career Highlights</h2>
-
-        </div>
-
-        <div class="achievement-grid">
-
-            <div class="achievement-card">
-
-                <i class="fa-solid fa-cloud"></i>
-
-                <h3>Cloud</h3>
-
-                <p>
-                    Hands-on experience with Microsoft Azure services.
-                </p>
-
-            </div>
-
-            <div class="achievement-card">
-
-                <i class="fa-solid fa-server"></i>
-
-                <h3>Infrastructure as Code</h3>
-
-                <p>
-                    Building reusable infrastructure using Terraform.
-                </p>
-
-            </div>
-
-            <div class="achievement-card">
-
-                <i class="fa-solid fa-gears"></i>
-
-                <h3>Automation</h3>
-
-                <p>
-                    Learning CI/CD pipelines and deployment automation.
-                </p>
-
-            </div>
-
-            <div class="achievement-card">
-
-                <i class="fa-solid fa-laptop-code"></i>
-
-                <h3>Projects</h3>
-
-                <p>
-                    Developing cloud-focused and AI-based applications.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-                    CONTACT SECTION
-====================================================== -->
-
-<section id="contact" class="contact section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>CONTACT</span>
-
-            <h2>Let's Build Something Amazing Together</h2>
-
-            <p>
-                I'm open to internships, freelance projects and full-time
-                DevOps opportunities.
-            </p>
-
-        </div>
-
-        <div class="contact-wrapper">
-
-            <!-- Contact Information -->
-
-            <div class="contact-info">
-
-                <div class="contact-card">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <div>
-
-                        <h3>Email</h3>
-
-                        <p>gaurav25eng@gmail.com</p>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <i class="fa-solid fa-phone"></i>
-
-                    <div>
-
-                        <h3>Phone</h3>
-
-                        <p>+91 78605 91437</p>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <div>
-
-                        <h3>Location</h3>
-
-                        <p>Varanasi, Uttar Pradesh, India</p>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <i class="fa-solid fa-clock"></i>
-
-                    <div>
-
-                        <h3>Availability</h3>
-
-                        <p>Open for Opportunities</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Contact Form -->
-
-            <form id="contact-form" class="contact-form">
-
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required>
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required>
-
-                <input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    required>
-
-                <textarea
-                    name="message"
-                    rows="6"
-                    placeholder="Write your message..."
-                    required></textarea>
-
-                <button
-                    id="send-btn"
-                    type="submit"
-                    class="btn primary">
-
-                    Send Message
-
-                </button>
-
-            </form>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-....
-
-</section>
-
-<!-- Theme Switcher -->
-
-<div class="theme-switcher">
-
-    <button data-theme="dark">🌙</button>
-
-    <button data-theme="azure">🔵</button>
-
-    <button data-theme="purple">🟣</button>
-
-    <button data-theme="emerald">🟢</button>
-
-</div>
-
-<footer>
-
-...
-
-<!-- ======================================================
-                    FOOTER
-====================================================== -->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-top">
-
-            <div class="footer-brand">
-
                 <h2>Gaurav Dubey</h2>
+                <div class="hero-title-role">
+                  <span>Azure &amp; DevOps Engineer</span>
+                  <span style="color:var(--text-muted);">&bull;</span>
+                  <span id="typing-text">Microsoft Azure Cloud Infrastructure</span>
+                  <span class="typing-cursor"></span>
+                </div>
+              </div>
 
-                <p>
+              <p class="hero-description">
+                I build, automate, and manage scalable cloud infrastructure using Azure, Terraform, and modern DevOps practices. Transforming complex distributed systems into reproducible, resilient code.
+              </p>
 
-                    DevOps & Cloud Engineer passionate about
-                    Microsoft Azure, Terraform,
-                    Linux and Automation.
+              <!-- Hero Call to Action Buttons -->
+              <div class="hero-cta-cluster">
+                <a href="#architecture-map" class="btn btn-cyan" id="hero-map-cta">
+                  <i class="fa-solid fa-diagram-project"></i>
+                  <span>Live Cloud Map</span>
+                </a>
 
-                </p>
+                <a href="#island-projects" class="btn btn-primary" id="hero-projects-cta">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>View Projects</span>
+                </a>
+
+                <a href="assets/resume/Gaurav_Dubey_Azure_DevOps_Engineer.pdf" download
+                  class="btn btn-secondary" id="hero-resume-cta">
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                  <span>Download Resume</span>
+                </a>
+
+                <a href="#islands-hub" class="btn btn-secondary" id="hero-explore-cta"
+                  title="Explore All Floating Islands">
+                  <i class="fa-solid fa-compass"></i>
+                  <span>Explore Cloudverse</span>
+                </a>
+              </div>
+
+              <!-- Social Links Cluster -->
+              <div style="display:flex; align-items:center; gap:1.25rem; margin-top:0.75rem;">
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">CONNECT:</span>
+                <a href="https://github.com/gauravdubey5" target="_blank" rel="noopener noreferrer"
+                  class="tech-badge" title="GitHub Profile">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/gauravdubey5" target="_blank" rel="noopener noreferrer"
+                  class="tech-badge" title="LinkedIn Profile">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <button type="button" class="tech-badge copy-email-action" title="Click to Copy Email">
+                  <i class="fa-solid fa-envelope"></i> gaurav25eng@gmail.com
+                </button>
+              </div>
+
+              <!-- Quick Telemetry Metrics Row -->
+              <div class="hero-metrics-row">
+                <div class="metric-item">
+                  <span class="metric-number">2+</span>
+                  <span class="metric-label">Production Projects</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-number">8+</span>
+                  <span class="metric-label">Cloud Tech Stack</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-number">1+</span>
+                  <span class="metric-label">DevOps Internship</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-number">100%</span>
+                  <span class="metric-label">IaC Automation</span>
+                </div>
+              </div>
 
             </div>
 
-            <div class="footer-links">
+            <!-- Hero Holographic Avatar & Orbital Core -->
+            <div class="hero-hologram-wrap" aria-hidden="true">
+              <div class="holo-ring-outer">
+                <div class="holo-ring-inner"></div>
 
-                <h3>Quick Links</h3>
+                <!-- Orbiting Technology Nodes -->
+                <div class="orbit-node node-azure" title="Microsoft Azure"><i class="fa-brands fa-microsoft"></i></div>
+                <div class="orbit-node node-tf" title="Terraform IaC"><i class="fa-solid fa-server"></i></div>
+                <div class="orbit-node node-gh" title="GitHub Actions"><i class="fa-brands fa-github"></i></div>
+                <div class="orbit-node node-linux" title="Linux Systems"><i class="fa-brands fa-linux"></i></div>
+                <div class="orbit-node node-docker" title="Docker Containers"><i class="fa-brands fa-docker"></i></div>
 
-                <ul>
+                <!-- Central Profile Hologram -->
+                <div class="holo-avatar-container">
+                  <img src="assets/images/profile.png" alt="Gaurav Dubey - Azure DevOps Engineer" loading="eager">
+                </div>
+              </div>
+            </div>
 
-                    <li><a href="#home">Home</a></li>
+          </div>
+        </div>
+      </section>
 
-                    <li><a href="#about">About</a></li>
+      <!-- ==========================================================================
+           FLOATING ISLANDS NAVIGATION HUB (THE 6 WORLDS)
+           ========================================================================== -->
+      <section id="islands-hub" class="islands-hub">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-satellite"></i> Cloudverse Topology</span>
+            <h2 class="section-title">Explore the Floating Islands</h2>
+            <p class="section-subtitle">
+              Each floating sector represents a core pillar of my professional profile. Select an island to engage camera focus and explore deeper technical architecture.
+            </p>
+          </div>
 
-                    <li><a href="#skills">Skills</a></li>
+          <div class="islands-grid">
 
-                    <li><a href="#projects">Projects</a></li>
+            <!-- Island A: About HQ -->
+            <article class="glass-panel island-card" data-island="about" tabindex="0" role="button"
+              aria-label="Navigate to Island A: About HQ">
+              <div class="island-header">
+                <div class="island-beacon"><i class="fa-solid fa-building-columns"></i></div>
+                <span class="island-tag">SECTOR A // 01</span>
+              </div>
+              <div>
+                <h3>Island A: About HQ</h3>
+                <p>Command observatory covering my background, education in Computer Science, engineering philosophy, and cloud career objectives.</p>
+              </div>
+              <div class="island-footer">
+                <span>Enter Observatory</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
 
-                    <li><a href="#contact">Contact</a></li>
+            <!-- Island B: Skills Citadel -->
+            <article class="glass-panel island-card" data-island="skills" tabindex="0" role="button"
+              aria-label="Navigate to Island B: Skills Citadel">
+              <div class="island-header">
+                <div class="island-beacon"><i class="fa-solid fa-microchip"></i></div>
+                <span class="island-tag">SECTOR B // 02</span>
+              </div>
+              <div>
+                <h3>Island B: Skills Citadel</h3>
+                <p>Connected technical nodes across Microsoft Azure, Terraform IaC, GitHub Actions, Linux administration, Docker, and cloud networking.</p>
+              </div>
+              <div class="island-footer">
+                <span>Inspect Citadel</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
 
+            <!-- Island C: Projects Hangar -->
+            <article class="glass-panel island-card" data-island="projects" tabindex="0" role="button"
+              aria-label="Navigate to Island C: Projects Hangar">
+              <div class="island-header">
+                <div class="island-beacon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                <span class="island-tag">SECTOR C // 03</span>
+              </div>
+              <div>
+                <h3>Island C: Projects Hangar</h3>
+                <p>Enterprise Azure infrastructure, automated Terraform CI/CD pipelines, SmartLearn AI, and live GitHub repository deployments.</p>
+              </div>
+              <div class="island-footer">
+                <span>Launch Hangar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
+
+            <!-- Island D: Certifications Vault -->
+            <article class="glass-panel island-card" data-island="certs" tabindex="0" role="button"
+              aria-label="Navigate to Island D: Certifications Vault">
+              <div class="island-header">
+                <div class="island-beacon"><i class="fa-solid fa-vault"></i></div>
+                <span class="island-tag">SECTOR D // 04</span>
+              </div>
+              <div>
+                <h3>Island D: Certifications Vault</h3>
+                <p>Holographic achievement archive showcasing completed credentials in Azure, Terraform, Linux, and active containerization roadmaps.</p>
+              </div>
+              <div class="island-footer">
+                <span>Open Vault</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
+
+            <!-- Island E: Chrono Pathway -->
+            <article class="glass-panel island-card" data-island="journey" tabindex="0" role="button"
+              aria-label="Navigate to Island E: Chrono Pathway">
+              <div class="island-header">
+                <div class="island-beacon"><i class="fa-solid fa-timeline"></i></div>
+                <span class="island-tag">SECTOR E // 05</span>
+              </div>
+              <div>
+                <h3>Island E: Chrono Pathway</h3>
+                <p>Connected professional timeline from B.Tech computer science foundations to DevOps internship milestones and hands-on cloud labs.</p>
+              </div>
+              <div class="island-footer">
+                <span>Trace Pathway</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
+
+            <!-- Island F: Communications Deck -->
+            <article class="glass-panel island-card" data-island="contact" tabindex="0" role="button"
+              aria-label="Navigate to Island F: Communications Deck">
+              <div class="island-header">
+                <div class="island-beacon"><i class="fa-solid fa-satellite-dish"></i></div>
+                <span class="island-tag">SECTOR F // 06</span>
+              </div>
+              <div>
+                <h3>Island F: Communications Deck</h3>
+                <p>Direct terminal for inquiries, working EmailJS transmission, verified contact channels, and instant resume download action.</p>
+              </div>
+              <div class="island-footer">
+                <span>Open Terminal</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           LIVE CLOUD INFRASTRUCTURE MAP (INTERACTIVE AZURE ARCHITECTURE)
+           ========================================================================== -->
+      <section id="architecture-map" class="cloud-map-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-network-wired"></i> Production Architecture</span>
+            <h2 class="section-title">Live Cloud Infrastructure Map</h2>
+            <p class="section-subtitle">
+              Interactive architectural visualization of an enterprise Azure topology. Click any component to inspect its network boundaries, Terraform configuration, security controls, and source code.
+            </p>
+          </div>
+
+          <div class="arch-visualizer">
+
+            <!-- Toolbar Header -->
+            <div class="arch-toolbar">
+              <div class="arch-badge">
+                <span class="pulse-dot"></span>
+                <span>AZURE TOPOLOGY: PRODUCTION VNET (10.0.0.0/16)</span>
+              </div>
+              <div class="arch-controls">
+                <span class="tech-badge"><i class="fa-solid fa-code"></i> IaC: Terraform</span>
+                <span class="tech-badge"><i class="fa-solid fa-shield-halved"></i> Zero-Trust NSGs</span>
+              </div>
+            </div>
+
+            <!-- Architecture Canvas & Inspector Layout -->
+            <div class="arch-layout">
+
+              <!-- Left: Visual Architecture Topology Canvas -->
+              <div class="arch-diagram-canvas" id="topology-canvas">
+
+                <!-- Layer 1: Ingress Edge -->
+                <div class="arch-spine-row">
+                  <div class="arch-node" data-node="ingress" tabindex="0" role="button"
+                    aria-label="Inspect Azure Ingress Gateway">
+                    <div class="node-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                    <div class="node-text">
+                      <h4>Azure Edge &amp; Ingress Gateway</h4>
+                      <span>Cloudflare CDN &bull; SSL Termination &bull; DDoS Shield</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Layer 2: Main VNet Boundary -->
+                <div class="arch-vnet-boundary">
+                  <div class="vnet-tag" data-node="vnet" role="button" tabindex="0"
+                    title="Click to inspect Virtual Network configuration">
+                    <i class="fa-solid fa-network-wired"></i> Azure Virtual Network (10.0.0.0/16)
+                  </div>
+
+                  <!-- Subnets Grid -->
+                  <div class="subnets-grid">
+
+                    <!-- Subnet 1: Public Gateway -->
+                    <div class="subnet-block">
+                      <div class="subnet-header">
+                        <span>PUBLIC SUBNET</span>
+                        <span>10.0.1.0/24</span>
+                      </div>
+                      <div class="arch-node" data-node="subnet-public" tabindex="0" role="button">
+                        <div class="node-icon"><i class="fa-solid fa-door-open"></i></div>
+                        <div class="node-text">
+                          <h4>Application Gateway</h4>
+                          <span>NSG Allowed: 80, 443</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Subnet 2: Compute & App -->
+                    <div class="subnet-block">
+                      <div class="subnet-header">
+                        <span>COMPUTE SUBNET</span>
+                        <span>10.0.2.0/24</span>
+                      </div>
+                      <div class="arch-node" data-node="subnet-app" tabindex="0" role="button">
+                        <div class="node-icon"><i class="fa-solid fa-server"></i></div>
+                        <div class="node-text">
+                          <h4>Azure Linux VMs</h4>
+                          <span>Ubuntu 22.04 LTS &bull; Docker</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Subnet 3: Data & State Storage -->
+                    <div class="subnet-block">
+                      <div class="subnet-header">
+                        <span>STORAGE SUBNET</span>
+                        <span>10.0.3.0/24</span>
+                      </div>
+                      <div class="arch-node" data-node="subnet-data" tabindex="0" role="button">
+                        <div class="node-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="node-text">
+                          <h4>Azure Blob Storage</h4>
+                          <span>Terraform Remote State Lock</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Layer 3: Automation & Telemetry Spine -->
+                <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1.25rem;">
+                  <div class="arch-node" data-node="cicd" tabindex="0" role="button">
+                    <div class="node-icon"><i class="fa-brands fa-github-alt"></i></div>
+                    <div class="node-text">
+                      <h4>GitHub Actions CI/CD</h4>
+                      <span>Fmt &bull; Validate &bull; Plan &bull; Apply</span>
+                    </div>
+                  </div>
+
+                  <div class="arch-node" data-node="monitor" tabindex="0" role="button">
+                    <div class="node-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="node-text">
+                      <h4>Azure Monitor</h4>
+                      <span>Log Analytics &bull; Metrics</span>
+                    </div>
+                  </div>
+
+                  <div class="arch-node" data-node="security" tabindex="0" role="button">
+                    <div class="node-icon"><i class="fa-solid fa-key"></i></div>
+                    <div class="node-text">
+                      <h4>DevSecOps &amp; RBAC</h4>
+                      <span>Least Privilege Governance</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right: Interactive Component Inspector Drawer -->
+              <aside class="arch-inspector" aria-label="Component Inspector">
+                <div class="inspector-content">
+                  <div class="inspector-header">
+                    <span id="inspector-tag" class="inspector-tag">EDGE // CDN &amp; SECURITY</span>
+                    <span class="status-pill"><span class="pulse-dot"></span> Active Spec</span>
+                  </div>
+
+                  <h3 id="inspector-title">Azure Edge &amp; Ingress Gateway</h3>
+                  <p id="inspector-desc" class="inspector-desc">
+                    Global traffic routing, SSL termination, and DDoS mitigation before traffic reaches the virtual network.
+                  </p>
+
+                  <div id="inspector-specs" class="inspector-specs">
+                    <!-- Populated dynamically via JS -->
+                  </div>
+
+                  <!-- Code Sample Box -->
+                  <div style="margin-bottom:1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+                      <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">
+                        TERRAFORM IAC CONFIGURATION:
+                      </span>
+                    </div>
+                    <pre class="code-box"><code id="inspector-code"># Click any node to inspect</code></pre>
+                  </div>
+                </div>
+
+                <a id="inspector-link" href="https://github.com/gauravdubey5/terraform-enterprise-infrastructure"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;">
+                  <i class="fab fa-github"></i> View in GitHub Repository
+                </a>
+              </aside>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           ISLAND A: ABOUT HQ (OBSERVATORY & BIOGRAPHY)
+           ========================================================================== -->
+      <section id="island-about" class="island-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-building-columns"></i> Sector A &bull; Headquarters</span>
+            <h2 class="section-title">About Gaurav Dubey</h2>
+            <p class="section-subtitle">
+              Passionate Computer Science graduate dedicated to cloud infrastructure, automation, and building production-grade environments.
+            </p>
+          </div>
+
+          <div class="about-hq-grid">
+
+            <!-- Left: Profile Card & Quick Meta -->
+            <div class="glass-panel about-portrait-card">
+              <div class="portrait-frame">
+                <img src="assets/images/profile.png" alt="Gaurav Dubey Portrait">
+              </div>
+
+              <h3>Gaurav Dubey</h3>
+              <p style="color:var(--azure-glow); font-weight:600; font-family:var(--font-mono); margin-bottom:1rem;">
+                Azure &amp; DevOps Engineer
+              </p>
+
+              <div class="about-meta-grid">
+                <div class="meta-pill">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <h4>Education</h4>
+                  <span>B.Tech in CSE (2022-2026)</span>
+                </div>
+
+                <div class="meta-pill">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h4>Location</h4>
+                  <span>Varanasi, UP, India</span>
+                </div>
+
+                <div class="meta-pill">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <h4>Current Role</h4>
+                  <span>DevOps Intern</span>
+                </div>
+
+                <div class="meta-pill">
+                  <i class="fa-solid fa-language"></i>
+                  <h4>Languages</h4>
+                  <span>English &bull; Hindi</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Engineering Narrative & Principles -->
+            <div class="about-narrative">
+              <p class="narrative-lead">
+                "I believe modern engineering teams should never deploy manually what can be codified, versioned, and automatically tested."
+              </p>
+
+              <p>
+                As a Computer Science Engineering graduate, I have concentrated my engineering focus on Microsoft Azure, Terraform, Linux, and CI/CD pipelines. My goal is to simplify cloud complexity, establish strict security guardrails through Infrastructure as Code, and empower development velocity.
+              </p>
+
+              <p>
+                From authoring modular Terraform configurations to configuring automated validation in GitHub Actions, I continually test production patterns to ensure zero-drift, cost-conscious, and resilient architectures.
+              </p>
+
+              <!-- Core Engineering Principles -->
+              <div class="principles-grid">
+                <div class="principle-card">
+                  <i class="fa-solid fa-code"></i>
+                  <h4>Infrastructure as Code First</h4>
+                  <p>Every cloud resource must be declaratively version-controlled, tested, and automated via Terraform.</p>
+                </div>
+
+                <div class="principle-card">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <h4>DevSecOps &amp; Least Privilege</h4>
+                  <p>Security embedded at origin: strict NSGs, private endpoints, and scoped Azure RBAC access.</p>
+                </div>
+
+                <div class="principle-card">
+                  <i class="fa-solid fa-arrows-spin"></i>
+                  <h4>Continuous Automation</h4>
+                  <p>Eliminate human error by validating syntax, security, and plans before automated deployment.</p>
+                </div>
+
+                <div class="principle-card">
+                  <i class="fa-solid fa-seedling"></i>
+                  <h4>Continuous Learning Mindset</h4>
+                  <p>Expanding from cloud foundations into Docker, Kubernetes/AKS, and enterprise cloud architecture.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           ISLAND B: SKILLS CITADEL (TECHNICAL MATRIX)
+           ========================================================================== -->
+      <section id="island-skills" class="island-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-microchip"></i> Sector B &bull; Capabilities</span>
+            <h2 class="section-title">Technical Skills Citadel</h2>
+            <p class="section-subtitle">
+              Verified technologies and tools actively used in hands-on production and lab environments.
+            </p>
+          </div>
+
+          <div class="skills-citadel-grid">
+
+            <!-- Tower 1: Cloud & Azure Platform -->
+            <div class="glass-panel skill-tower">
+              <div class="tower-header">
+                <div class="tower-icon"><i class="fa-brands fa-microsoft"></i></div>
+                <div class="tower-title">
+                  <h3>Microsoft Azure</h3>
+                  <span>CLOUD INFRASTRUCTURE &amp; SERVICES</span>
+                </div>
+              </div>
+
+              <div class="skill-nodes-list">
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Azure Virtual Networks &amp; Subnets</span>
+                    <span class="node-proficiency">90%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:90%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Virtual Machines &amp; Compute</span>
+                    <span class="node-proficiency">85%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:85%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Azure Blob Storage &amp; Backend Locking</span>
+                    <span class="node-proficiency">88%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:88%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Network Security Groups (NSGs) &amp; RBAC</span>
+                    <span class="node-proficiency">85%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:85%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tower 2: Infrastructure as Code -->
+            <div class="glass-panel skill-tower">
+              <div class="tower-header">
+                <div class="tower-icon"><i class="fa-solid fa-server"></i></div>
+                <div class="tower-title">
+                  <h3>Terraform</h3>
+                  <span>INFRASTRUCTURE AS CODE (IAC)</span>
+                </div>
+              </div>
+
+              <div class="skill-nodes-list">
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Modular Terraform Architecture</span>
+                    <span class="node-proficiency">88%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:88%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Remote State Management (Azure Blob)</span>
+                    <span class="node-proficiency">85%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:85%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>HCL Variables, Outputs &amp; Data Sources</span>
+                    <span class="node-proficiency">90%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:90%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Terraform Plan, Apply &amp; Destroy Lifecycles</span>
+                    <span class="node-proficiency">88%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:88%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tower 3: CI/CD & Automation -->
+            <div class="glass-panel skill-tower">
+              <div class="tower-header">
+                <div class="tower-icon"><i class="fa-solid fa-code-branch"></i></div>
+                <div class="tower-title">
+                  <h3>CI/CD &amp; Pipelines</h3>
+                  <span>WORKFLOW AUTOMATION</span>
+                </div>
+              </div>
+
+              <div class="skill-nodes-list">
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>GitHub Actions Workflows</span>
+                    <span class="node-proficiency">85%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:85%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Automated Terraform Pipeline Checks</span>
+                    <span class="node-proficiency">85%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:85%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Azure DevOps Pipelines</span>
+                    <span class="node-proficiency">78%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:78%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>GitHub Secrets &amp; Credential Protection</span>
+                    <span class="node-proficiency">90%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:90%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tower 4: Systems, Containers & Foundations -->
+            <div class="glass-panel skill-tower">
+              <div class="tower-header">
+                <div class="tower-icon"><i class="fa-brands fa-linux"></i></div>
+                <div class="tower-title">
+                  <h3>Systems &amp; Containers</h3>
+                  <span>OPERATING SYSTEMS &amp; TOOLING</span>
+                </div>
+              </div>
+
+              <div class="skill-nodes-list">
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Linux (Ubuntu) &amp; Shell Administration</span>
+                    <span class="node-proficiency">88%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:88%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Git Version Control &amp; GitHub Collab</span>
+                    <span class="node-proficiency">92%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:92%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Bash &amp; PowerShell Scripting</span>
+                    <span class="node-proficiency">80%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:80%;"></div></div>
+                </div>
+
+                <div class="skill-node-item">
+                  <div class="node-info-row">
+                    <span>Docker Containers (In Progress)</span>
+                    <span class="node-proficiency">75%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar-fill" style="width:75%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           ISLAND C: PROJECTS HANGAR (FEATURED & GITHUB REPOSITORIES)
+           ========================================================================== -->
+      <section id="island-projects" class="island-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-cubes-stacked"></i> Sector C &bull; Deployments</span>
+            <h2 class="section-title">Featured Projects Hangar</h2>
+            <p class="section-subtitle">
+              Production-conscious cloud architectures, Infrastructure as Code repositories, and automated CI/CD pipelines.
+            </p>
+          </div>
+
+          <!-- Featured Projects Grid -->
+          <div class="projects-featured-grid">
+
+            <!-- Featured Project 1: Azure Enterprise Infrastructure with Terraform -->
+            <article class="glass-panel project-hangar-card">
+              <div class="project-visual-wrap">
+                <img src="assets/images/azure-enterprise.png" alt="Azure Enterprise Infrastructure with Terraform">
+                <div class="project-status-overlay">
+                  <span class="pulse-dot"></span> Production Style IaC
+                </div>
+              </div>
+
+              <div class="project-details-wrap">
+                <div class="project-tags-row">
+                  <span class="tech-badge"><i class="fa-solid fa-server"></i> Terraform</span>
+                  <span class="tech-badge"><i class="fa-brands fa-microsoft"></i> Microsoft Azure</span>
+                  <span class="tech-badge"><i class="fa-solid fa-network-wired"></i> VNet &amp; NSG</span>
+                </div>
+
+                <h3>Azure Enterprise Infrastructure with Terraform</h3>
+                <p>
+                  Architected and deployed a multi-tier Azure enterprise infrastructure using modular Terraform. Provisions isolated Virtual Networks, Subnets, Network Security Groups, Linux VMs, and Blob Storage for reproducible, automated cloud environments.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><i class="fa-solid fa-circle-check"></i> Modular Terraform architecture separating compute, network, and storage.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Zero-trust Network Security Group policies with ingress filtering.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Parameterized variables and state storage for enterprise reusability.</li>
                 </ul>
 
-            </div>
+                <div class="project-actions-row">
+                  <a href="https://github.com/gauravdubey5/terraform-enterprise-infrastructure"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View Repository
+                  </a>
+                  <button type="button" class="btn btn-secondary" onclick="window.selectArchitectureNode('vnet')">
+                    <i class="fa-solid fa-eye"></i> View Architecture
+                  </button>
+                </div>
+              </div>
+            </article>
 
-            <div class="footer-social">
+            <!-- Featured Project 2: GitHub Actions CI/CD Pipeline for Terraform -->
+            <article class="glass-panel project-hangar-card">
+              <div class="project-visual-wrap">
+                <img src="assets/images/github-actions-terraform.png" alt="GitHub Actions CI/CD Pipeline for Terraform">
+                <div class="project-status-overlay">
+                  <span class="pulse-dot"></span> Automated CI/CD
+                </div>
+              </div>
 
-                <h3>Connect</h3>
-
-                <div class="social-icons">
-
-                    <a href="https://github.com/gauravdubey5"
-                       target="_blank">
-
-                        <i class="fab fa-github"></i>
-
-                    </a>
-
-                    <a href="https://linkedin.com/in/gauravdubey5"
-                       target="_blank">
-
-                        <i class="fab fa-linkedin"></i>
-
-                    </a>
-
-                    <a href="mailto:gaurav25eng@gmail.com">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                    </a>
-
+              <div class="project-details-wrap">
+                <div class="project-tags-row">
+                  <span class="tech-badge"><i class="fa-solid fa-code-branch"></i> GitHub Actions</span>
+                  <span class="tech-badge"><i class="fa-solid fa-server"></i> Terraform</span>
+                  <span class="tech-badge"><i class="fa-brands fa-microsoft"></i> Azure Secrets</span>
                 </div>
 
+                <h3>GitHub Actions CI/CD Pipeline for Terraform</h3>
+                <p>
+                  Built a fully automated CI/CD deployment pipeline using GitHub Actions to streamline Terraform workflows targeting Microsoft Azure. Enforces formatting checks, static validation, plan artifacts on pull requests, and automated deployment upon merge.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><i class="fa-solid fa-circle-check"></i> Automated linting (`terraform fmt -check`) and validation on PRs.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Secure Azure Service Principal integration via encrypted GitHub Secrets.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Non-blocking plan preview generation ensuring zero unreviewed changes.</li>
+                </ul>
+
+                <div class="project-actions-row">
+                  <a href="https://github.com/gauravdubey5/GitHub-Actions-CI-CD-Pipeline-Automation-"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View Repository
+                  </a>
+                  <button type="button" class="btn btn-secondary" onclick="window.selectArchitectureNode('cicd')">
+                    <i class="fa-solid fa-diagram-project"></i> Pipeline Topology
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Featured Project 3: SmartLearn AI -->
+            <article class="glass-panel project-hangar-card">
+              <div class="project-visual-wrap">
+                <img src="assets/images/smartlearn.png" alt="SmartLearn AI Cloud Native LMS">
+                <div class="project-status-overlay">
+                  <span class="pulse-dot"></span> Cloud-Native Web App
+                </div>
+              </div>
+
+              <div class="project-details-wrap">
+                <div class="project-tags-row">
+                  <span class="tech-badge"><i class="fa-brands fa-python"></i> Python / Flask</span>
+                  <span class="tech-badge"><i class="fa-solid fa-brain"></i> AI Integration</span>
+                  <span class="tech-badge"><i class="fa-brands fa-docker"></i> Containerized</span>
+                </div>
+
+                <h3>SmartLearn AI Platform</h3>
+                <p>
+                  A cloud-native Learning Management System built with Flask, integrating generative AI to provide dynamic content recommendations and automated assessments. Engineered with containerization principles for rapid deployment.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><i class="fa-solid fa-circle-check"></i> Modular backend architecture with RESTful endpoints.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Container-ready structure for Docker and cloud orchestration.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Scalable session and asset management.</li>
+                </ul>
+
+                <div class="project-actions-row">
+                  <a href="https://github.com/gauravdubey5" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Featured Project 4: Reusable Azure Terraform Modules -->
+            <article class="glass-panel project-hangar-card">
+              <div class="project-visual-wrap" style="display:flex; align-items:center; justify-content:center; background:radial-gradient(circle, #0F2752 0%, #030712 80%);">
+                <div style="text-align:center;">
+                  <i class="fa-solid fa-cubes" style="font-size:3.5rem; color:var(--cyber-cyan); margin-bottom:0.75rem;"></i>
+                  <h4 style="color:#FFFFFF; font-family:var(--font-mono);">AZURE // TERRAFORM MODULES</h4>
+                </div>
+                <div class="project-status-overlay">
+                  <span class="pulse-dot"></span> Reusable IaC
+                </div>
+              </div>
+
+              <div class="project-details-wrap">
+                <div class="project-tags-row">
+                  <span class="tech-badge"><i class="fa-solid fa-server"></i> Terraform</span>
+                  <span class="tech-badge"><i class="fa-solid fa-shield-halved"></i> Governance</span>
+                  <span class="tech-badge"><i class="fa-brands fa-microsoft"></i> Enterprise Standards</span>
+                </div>
+
+                <h3>Reusable Azure Terraform Modules</h3>
+                <p>
+                  Standardized, decoupled Infrastructure as Code modules for provisioning consistent Azure environments. Includes battle-tested modules for Virtual Networks, Subnet security associations, NSGs, and Linux Virtual Machines.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><i class="fa-solid fa-circle-check"></i> Standardized naming conventions, tagging, and resource group hierarchy.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Built-in security defaults preventing accidental public exposure.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Validated through CI execution plans before state changes.</li>
+                </ul>
+
+                <div class="project-actions-row">
+                  <a href="https://github.com/gauravdubey5" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary">
+                    <i class="fab fa-github"></i> Browse Modules
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Dynamic GitHub Repositories Panel -->
+          <div class="glass-panel github-feed-panel">
+            <div class="github-profile-strip">
+              <div class="gh-user-info">
+                <div class="gh-avatar-circle">
+                  <img id="github-avatar" src="assets/images/profile.png" alt="GitHub Profile Avatar">
+                </div>
+                <div>
+                  <h3 id="github-username">gauravdubey5</h3>
+                  <p id="github-bio">Azure &amp; DevOps Engineer &bull; Terraform &bull; Linux</p>
+                </div>
+              </div>
+
+              <div class="gh-live-stats">
+                <div class="gh-stat-box">
+                  <span id="repo-count">4+</span>
+                  <span>Repositories</span>
+                </div>
+                <div class="gh-stat-box">
+                  <span id="followers">10+</span>
+                  <span>Followers</span>
+                </div>
+                <div class="gh-stat-box">
+                  <span id="following">12+</span>
+                  <span>Following</span>
+                </div>
+                <div class="gh-stat-box">
+                  <span id="public-gists">0</span>
+                  <span>Gists</span>
+                </div>
+              </div>
             </div>
 
-        </div>
+            <h4 style="font-size:1.1rem; color:#FFFFFF; margin-bottom:1.25rem;">
+              <i class="fa-solid fa-satellite" style="color:var(--cyber-cyan); margin-right:6px;"></i>
+              Live GitHub Repository Feed
+            </h4>
 
-        <hr>
+            <div id="github-projects" class="repos-dynamic-grid">
+              <!-- Repositories populated dynamically via js/github.js -->
+            </div>
 
-        <div class="footer-bottom">
-
-            <p>
-
-                © <span id="year"></span>
-                Gaurav Dubey.
-                All Rights Reserved.
-
-            </p>
-
-            <p>
-
-                Designed, Developed & Deployed by Gaurav Dubey
-
-                Powered by GitHub & Cloudflare Pages 🚀
-
-            </p>
+            <div style="text-align:center; margin-top:2rem;">
+              <a href="https://github.com/gauravdubey5" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">
+                <i class="fab fa-github"></i> Visit GitHub Profile &bull; @gauravdubey5
+              </a>
+            </div>
+          </div>
 
         </div>
+      </section>
 
-    </div>
+      <!-- ==========================================================================
+           ISLAND D: CERTIFICATIONS VAULT
+           ========================================================================== -->
+      <section id="island-certs" class="island-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-vault"></i> Sector D &bull; Credentials</span>
+            <h2 class="section-title">Certifications &amp; Learning Vault</h2>
+            <p class="section-subtitle">
+              Verified technical credentials, formal training, and active cloud learning certifications.
+            </p>
+          </div>
 
-</footer>
+          <div class="certs-vault-grid">
 
-<!-- ======================================================
-                BACK TO TOP
-====================================================== -->
+            <!-- Cert 1: Microsoft Azure -->
+            <div class="glass-panel vault-card">
+              <div class="vault-badge-icon"><i class="fa-brands fa-microsoft"></i></div>
+              <h3>Microsoft Azure</h3>
+              <p>Cloud Computing Fundamentals, Infrastructure Architecture, Virtual Networks, Compute, and Azure Administration.</p>
+              <span class="vault-status-badge verified"><i class="fa-solid fa-circle-check"></i> Completed &bull; Verified</span>
+            </div>
 
-<button id="backToTop" class="back-to-top">
+            <!-- Cert 2: Terraform IaC -->
+            <div class="glass-panel vault-card">
+              <div class="vault-badge-icon"><i class="fa-solid fa-server"></i></div>
+              <h3>Terraform Associate</h3>
+              <p>Infrastructure as Code concepts, state locking, reusable modules, provider configurations, and CI/CD automation.</p>
+              <span class="vault-status-badge verified"><i class="fa-solid fa-circle-check"></i> Completed &bull; Verified</span>
+            </div>
 
-    <i class="fa-solid fa-arrow-up"></i>
+            <!-- Cert 3: Linux Systems -->
+            <div class="glass-panel vault-card">
+              <div class="vault-badge-icon"><i class="fa-brands fa-linux"></i></div>
+              <h3>Linux Administration</h3>
+              <p>Ubuntu system fundamentals, permission models, shell scripting, package managers, and automated task execution.</p>
+              <span class="vault-status-badge verified"><i class="fa-solid fa-circle-check"></i> Completed &bull; Verified</span>
+            </div>
 
-</button>
+            <!-- Cert 4: Docker (In Progress) -->
+            <div class="glass-panel vault-card">
+              <div class="vault-badge-icon"><i class="fa-brands fa-docker"></i></div>
+              <h3>Docker Containers</h3>
+              <p>Container images, multi-stage Dockerfiles, microservice packaging, and container network isolation.</p>
+              <span class="vault-status-badge in-progress"><i class="fa-solid fa-spinner fa-spin"></i> In Progress &bull; Q4 2026</span>
+            </div>
 
-<!-- ======================================================
-                JAVASCRIPT
-====================================================== -->
+            <!-- Cert 5: Kubernetes / AKS (Target) -->
+            <div class="glass-panel vault-card">
+              <div class="vault-badge-icon"><i class="fa-solid fa-dharmachakra"></i></div>
+              <h3>Kubernetes &amp; AKS</h3>
+              <p>Container orchestration, Pod lifecycles, Ingress controllers, Helm charts, and Azure Kubernetes Service.</p>
+              <span class="vault-status-badge in-progress"><i class="fa-solid fa-bullseye"></i> Target Roadmap</span>
+            </div>
 
-<script src="js/main.js"></script>
-<script src="js/github.js"></script>
-<script src="js/theme.js"></script>
-<script src="js/advanced.js"></script>
-<script src="js/scroll.js"></script>
-<script src="js/typing.js"></script>
-<script src="js/animation.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <!-- Cert 6: Azure DevOps Advanced -->
+            <div class="glass-panel vault-card">
+              <div class="vault-badge-icon"><i class="fa-solid fa-cloud"></i></div>
+              <h3>Azure DevOps Specialist</h3>
+              <p>Enterprise YAML release pipelines, artifact feeds, automated security gates, and branch policies.</p>
+              <span class="vault-status-badge in-progress"><i class="fa-solid fa-bullseye"></i> Active Study</span>
+            </div>
 
-<script>
+          </div>
+        </div>
+      </section>
 
-emailjs.init({
-    publicKey: "D1ISIq5lvKaPZ6rdE",
-});
+      <!-- ==========================================================================
+           ISLAND E: CHRONO PATHWAY (EXPERIENCE & LEARNING JOURNEY)
+           ========================================================================== -->
+      <section id="island-journey" class="island-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-timeline"></i> Sector E &bull; Milestones</span>
+            <h2 class="section-title">Professional Journey &amp; Timeline</h2>
+            <p class="section-subtitle">
+              Progressive milestone track from computer science foundations to hands-on cloud automation and DevOps engineering.
+            </p>
+          </div>
 
-</script>
+          <div class="journey-timeline">
 
-<script src="js/contact.js"></script>
-</body>
-</html>
+            <!-- Milestone 1: DevOps Intern -->
+            <div class="timeline-milestone">
+              <div class="milestone-node"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="glass-panel milestone-card">
+                <span class="milestone-date-tag">2026 &mdash; PRESENT</span>
+                <h3>DevOps Intern</h3>
+                <h4>DevOps Insider</h4>
+                <p>
+                  Collaborating on production cloud infrastructure and automation tasks. Designing and maintaining modular Terraform scripts for Azure Virtual Networks and virtual machines. Assisting with GitHub Actions CI/CD workflows, automated validation, and Linux system configuration.
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+                  <span class="tech-badge">Microsoft Azure</span>
+                  <span class="tech-badge">Terraform IaC</span>
+                  <span class="tech-badge">GitHub Actions</span>
+                  <span class="tech-badge">Linux</span>
+                </div>
+              </div>
+            </div>
 
-    <script src="js/main.js"></script>
+            <!-- Milestone 2: B.Tech Computer Science -->
+            <div class="timeline-milestone">
+              <div class="milestone-node"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="glass-panel milestone-card">
+                <span class="milestone-date-tag">2022 &mdash; 2026</span>
+                <h3>Bachelor of Technology &bull; Computer Science Engineering</h3>
+                <h4>Varanasi, Uttar Pradesh, India</h4>
+                <p>
+                  Built foundational computer science expertise covering operating systems, computer networking, algorithms, and distributed systems. Transitioned from general software development to dedicated cloud architecture, containerization, and automated DevOps delivery pipelines.
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+                  <span class="tech-badge">Operating Systems</span>
+                  <span class="tech-badge">Computer Networks</span>
+                  <span class="tech-badge">SmartLearn AI</span>
+                  <span class="tech-badge">Cloud Computing</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 3: Key Technical Milestones -->
+            <div class="timeline-milestone">
+              <div class="milestone-node"><i class="fa-solid fa-award"></i></div>
+              <div class="glass-panel milestone-card">
+                <span class="milestone-date-tag">CLOUD ENGINEERING HIGHLIGHTS</span>
+                <h3>Infrastructure &amp; Automation Milestones</h3>
+                <h4>Continuous DevOps Progression</h4>
+                <p>
+                  &bull; Successfully provisioned full Azure Enterprise Infrastructure via Terraform modules.<br>
+                  &bull; Automated multi-stage GitHub Actions workflows for continuous Terraform plan &amp; apply.<br>
+                  &bull; Configured cloud deployments with Zero-Trust network security groups and state locking.<br>
+                  &bull; Portfolio engineered and deployed to global edge via Cloudflare Pages and GitHub Actions.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           ISLAND F: COMMUNICATIONS TERMINAL & RESUME
+           ========================================================================== -->
+      <section id="island-contact" class="island-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-satellite-dish"></i> Sector F &bull; Uplink</span>
+            <h2 class="section-title">Communications Terminal</h2>
+            <p class="section-subtitle">
+              Ready to connect for DevOps engineering roles, cloud infrastructure projects, or technical collaboration.
+            </p>
+          </div>
+
+          <div class="contact-terminal-grid">
+
+            <!-- Left: Contact Details & Direct Resume Download Card -->
+            <div class="terminal-info-deck">
+
+              <div class="glass-panel terminal-connect-card">
+                <h3 style="font-size:1.2rem; color:#FFFFFF; margin-bottom:0.5rem;">Transmission Channels</h3>
+                <p style="font-size:0.88rem;">Direct communication channels to get in touch with me directly.</p>
+
+                <div class="connect-methods-list">
+
+                  <!-- Email with Click-to-Copy -->
+                  <div class="connect-item">
+                    <div class="connect-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="connect-meta">
+                      <h4>Primary Email</h4>
+                      <a href="mailto:gaurav25eng@gmail.com">gaurav25eng@gmail.com</a>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-sm copy-email-action"
+                      style="margin-left:auto;" title="Copy email address to clipboard">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="connect-item">
+                    <div class="connect-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="connect-meta">
+                      <h4>Mobile Phone</h4>
+                      <a href="tel:+917860591437">+91 78605 91437</a>
+                    </div>
+                  </div>
+
+                  <!-- Location -->
+                  <div class="connect-item">
+                    <div class="connect-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="connect-meta">
+                      <h4>Location</h4>
+                      <span>Varanasi, Uttar Pradesh, India</span>
+                    </div>
+                  </div>
+
+                  <!-- Professional Availability -->
+                  <div class="connect-item">
+                    <div class="connect-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="connect-meta">
+                      <h4>Status</h4>
+                      <span style="color:#34D399;">Available for Full-Time Roles &amp; Internships</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Dedicated Resume Download Box -->
+              <div class="resume-download-box">
+                <div style="display:flex; align-items:center; gap:0.85rem;">
+                  <i class="fa-solid fa-file-pdf" style="font-size:2rem; color:var(--cyber-cyan);"></i>
+                  <div>
+                    <h3>Engineering Resume (PDF)</h3>
+                    <span style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
+                      Gaurav_Dubey_Azure_DevOps_Engineer.pdf &bull; ~293 KB
+                    </span>
+                  </div>
+                </div>
+                <p style="font-size:0.88rem; color:#CBD5E1;">
+                  Complete resume detailing technical qualifications, Azure certifications, DevOps projects, education, and internship experience.
+                </p>
+                <a href="assets/resume/Gaurav_Dubey_Azure_DevOps_Engineer.pdf" download
+                  class="btn btn-primary" id="terminal-resume-btn">
+                  <i class="fa-solid fa-download"></i> Download Latest Resume
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Right: Working Contact Form (EmailJS) -->
+            <div class="glass-panel terminal-form-card">
+              <h3 style="font-size:1.35rem; color:#FFFFFF; margin-bottom:0.5rem;">Transmit Signal</h3>
+              <p style="font-size:0.92rem; margin-bottom:1.75rem;">
+                Send an immediate message directly to my inbox via this integrated terminal form.
+              </p>
+
+              <form id="contact-form">
+                <div class="form-group-wrap">
+                  <div class="form-row">
+                    <div class="form-field">
+                      <label for="contact-name">Your Name</label>
+                      <input type="text" id="contact-name" name="name" placeholder="E.g., Sarah Connor" required>
+                    </div>
+
+                    <div class="form-field">
+                      <label for="contact-email">Your Email</label>
+                      <input type="email" id="contact-email" name="email" placeholder="name@company.com" required>
+                    </div>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="contact-subject">Transmission Subject</label>
+                    <input type="text" id="contact-subject" name="subject" placeholder="DevOps Opportunity / Infrastructure Inquiry" required>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="contact-message">Message Details</label>
+                    <textarea id="contact-message" name="message" rows="5"
+                      placeholder="Hi Gaurav, I reviewed your Cloudverse portfolio and would like to discuss a DevOps role..." required></textarea>
+                  </div>
+
+                  <button type="submit" id="send-btn" class="btn btn-primary" style="width:100%; padding:0.95rem;">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Transmit Message</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==========================================================================
+         RECRUITER QUICK-ACCESS DOCK (BOTTOM STREAMLINED HUD)
+         ========================================================================== -->
+    <nav class="recruiter-dock" aria-label="Quick Access Dock">
+      <a href="#hero" class="dock-pill active" title="Top Deck"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#architecture-map" class="dock-pill" title="Live Azure Architecture"><i class="fa-solid fa-diagram-project"></i> Cloud Map</a>
+      <a href="#island-skills" class="dock-pill" title="Technical Skills"><i class="fa-solid fa-microchip"></i> Skills</a>
+      <a href="#island-projects" class="dock-pill" title="Featured Projects"><i class="fa-solid fa-cubes-stacked"></i> Projects</a>
+      <a href="#island-journey" class="dock-pill" title="Timeline"><i class="fa-solid fa-route"></i> Journey</a>
+      <a href="assets/resume/Gaurav_Dubey_Azure_DevOps_Engineer.pdf" download class="dock-pill"
+        style="background:var(--azure-blue); color:#FFFFFF;" title="Download Resume (PDF)">
+        <i class="fa-solid fa-download"></i> Resume
+      </a>
+      <a href="#island-contact" class="dock-pill" title="Contact Form"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="cloudverse-footer">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <h2>Gaurav Dubey</h2>
+            <p>
+              Azure &amp; DevOps Engineer passionate about Microsoft Azure, Terraform, Linux, and automated CI/CD pipelines. Transforming infrastructure challenges into scalable, reliable code.
+            </p>
+            <div style="margin-top:1.25rem;">
+              <span class="status-pill"><span class="pulse-dot"></span> Available for Opportunities</span>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Cloudverse Hub</h3>
+            <ul>
+              <li><a href="#hero">Overview Deck</a></li>
+              <li><a href="#architecture-map">Cloud Architecture Map</a></li>
+              <li><a href="#island-skills">Technical Skills Citadel</a></li>
+              <li><a href="#island-projects">Featured Projects Hangar</a></li>
+              <li><a href="#island-certs">Certifications Vault</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Transmission</h3>
+            <ul>
+              <li><a href="mailto:gaurav25eng@gmail.com">gaurav25eng@gmail.com</a></li>
+              <li><a href="tel:+917860591437">+91 78605 91437</a></li>
+              <li><a href="https://github.com/gauravdubey5" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+              <li><a href="https://linkedin.com/in/gauravdubey5" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+              <li><a href="assets/resume/Gaurav_Dubey_Azure_DevOps_Engineer.pdf" download>Download Resume (PDF)</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>
+            &copy; <span id="current-year">2026</span> Gaurav Dubey. All Rights Reserved.
+          </p>
+          <p>
+            Designed &amp; Deployed by Gaurav Dubey &bull; Powered by Cloudflare Pages &amp; GitHub Actions 🚀
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" id="backToTop" class="btn btn-secondary btn-sm"
+      style="position:fixed; bottom:2rem; right:2rem; width:44px; height:44px; border-radius:50%; padding:0; z-index:990; opacity:0; pointer-events:none; display:flex; align-items:center; justify-content:center; box-shadow:var(--glow-azure);"
+      aria-label="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+  </div>
+
+  <!-- ==========================================================================
+       SCRIPTS // THREE.JS 3D ENGINE & CONTROLLERS
+       ========================================================================== -->
+  <!-- Three.js Library via CDN for High-Performance WebGL 3D World -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- EmailJS SDK (Preserved Real Credentials) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      if (typeof emailjs !== 'undefined') {
+        emailjs.init({
+          publicKey: "D1ISIq5lvKaPZ6rdE",
+        });
+      }
+    })();
+  </script>
+
+  <!-- Application Modules -->
+  <script src="js/cloudverse-3d.js"></script>
+  <script src="js/architecture-map.js"></script>
+  <script src="js/github.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
