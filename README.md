@@ -126,7 +126,7 @@ This repository is optimized for **Cloudflare Pages** and **GitHub Pages**:
 - 💼 **LinkedIn:** [linkedin.com/in/gauravdubey5](https://linkedin.com/in/gauravdubey5)  
 - 💻 **GitHub:** [github.com/gauravdubey5](https://github.com/gauravdubey5)  
 - 🌐 **Portfolio:** [gauravdubey.pages.dev](https://gauravdubey.pages.dev/)  
-- 📱 **Phone:** +91 78605 91437  
+
 
 ---
 
